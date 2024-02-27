@@ -58,27 +58,6 @@ views는 jsp쪽<br>
 web.xml은 톰켓 환경설정<br>
 pom.xml은 Maven에서 반자동으로 끌어온다.<br>
 
-
-★★프로젝트 생성시 처음 해야 할 것★★<br>
-0. 이클립스 utf-8 인코딩변경 -> 폰트 설치(d2 Coding 폰트)설치하면 좋음 텍스트 파일오른쪽클릭 > 설치<br>
-1. mvc 프로젝트 생성<br>
-2. web.xml을 찾아서 톰켓 web.xml과 버전 일치<br>
-3. pom.xml을 찾아서 버전 관리<br>
-  - 스프링 버전 5버전 이후로 설정 12행<br>
-  - jdk 버전 11버전 이후로 설정 (11, 141, 142행)<br>
-4. 톰켓에 add -> 프로젝트 연결 -> 톰켓 더블클릭 -> Modules 탭에 / 컨텍스트패스(path, www) 확인<br>
-5. 톰켓 start -> 크롬 -> http://ip주소:포트/컨텍스트루트명(www)<br>
- ->http://192.168.111.105/www (초기화면 나옴)<br>
-6. 오라클 설치 -> 포트번호 1521 -> system/oracle<br>
--> cmd -> sqlplus system/oracle<br>
--> 사용할 계정 생성, 권한 부여 (이클립스에 있는 dataSource exp를 활용)<br>
-7. 프로젝트에 ojdbc8.jar 연결<br>
- -> 프로젝트 우클릭 -> Build Path -> Libaries -> Classpath : add <br>
- -> Web DeploymentAssembly 확인 (DeploymentAssembly > add > java Build Path Entries클릭해서 진입하면 jdbc8있음 선택하고 close
-Project Explorer 에서 ojdbc8.jar있는지 확인<br>
-
-
-
 ★★ hom.xml 주석 확실이 공부할것<br>
 					★window pro는 어둠의경로로<br>
 @Controller에서 뿌려준다.<br>
@@ -189,3 +168,81 @@ server탭에서 톰켓연결할것<br>
 <plugins></plugins>안에다 추가하면 해결된다.<br>
 
 ★★ autowrit? 오류 뜨면 lombok 설치안되있는것<br>
+
+
+★ 0227
+60p 이해할것
+★@Log4j 를 Log4j2로 수정할 것
+83 히카리 hikaricp
+https://mvnrepository.com/search?q=hikaricp
+2.7.4 버전 클릭
+
+root-context.xml > 84p 코드 입력 오타나면 안되니 복붙할것
+중간  beans 탭 눌러보기 hikariConfig, dataSource있는지 확인하기 있으면 객체화 시켰다는 것
+
+● DataSourceTests.java , hotelTest.java같은 코드는 
+
+@RunWith(SpringJUnit4ClassRunner.class)	// junit으로 테스트 코드
+@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml") //참고할 파일
+@Log4j2 // Log4j2를 이용해서 로그 출력(콘솔에 찍히는 로그)
+
+붙이기
+●testConnection Junit 실행해보기
+★@코드네임은 자동완성할것 자동완성 안하면 코드오류 발생할 수 있음
+● MyBatis, spring에서 자주 사용함
+web.xml에서 히카리 밑에다가 mybatis 선언
+철자 틀리면 안되니 "mybatis복붙용 삭제금지".text에서 복붙하기
+★ 콘솔의 빨간색은 톰켓 로그 애러아님
+● 스프링과의 연동 처리
+Mapper는 매핑하는 것 쿼리와 자바를 매핑 , 
+~를 호출했을때 ~쿼리를 호출하는것
+● interface TimeMapper.java
+★★★ 주의사항 sql문 뒤에 ; 사용하면 오류
+★ Beans Graph탭이나, Namespaces 에 mybatis-spring 안보이면 이클립스 종료재시작 해보기
+
+
+(testGetTime26)은 spring이 자동으로 만든 구현 클래스
+
+● 98p
+TimeMapper.java와 동일한 이름인 TimeMapper.xml 파일을 만든다, 대소문자 일치시키기
+★ 오타있으면 안되니  TimeMapper.xml 은 TimeMapper.text 복붙할것
+★ 다른곳에서 사용할 때 프로젝트명 :   <mapper namespace="org.zerock.mapper.TimeMapper"> 만 바꾸면 된다.
+● testGetTime2() 실행
+● 4.3 log4dbc-log4j2 설정 101p
+https://mvnrepository.com/search?q=log4jdbc 
+log4jdbc 검색
+
+● 105p 출력안되면 서블릿과 mybatis 버전때문이다.  
+mybatis <version>3.5.15</version>로 변경하기
+pom.xml의 <!-- 구버전 주석처리함 --> 참조
+105p문제해결.txt 에서 복붙하고 name만 수정하여 사용
+<name>ex01</name>
+● 107p mvc.txt받은거 참고할것
+Controller 는 url로 오는걸 view로 뿌려줄지 model로 뿌려줄지 판단함
+WebApplication Context = 톰켓
+
+책과 버전 다름
+mvc.txt받은거 참고할것
+크롬에서 http://localhost/controller/ 검색
+112p
+<url-pattern>/</url-pattern> 은 localHost의 /
+Request/Response 사용안함
+이제 <% value %> 사용안함
+★★★123p 여러번 읽어보기  ★★Model★★ Model에서 데이터를 땡겨온다.
+<context:component-scan base-package="org.zerock.controller" /> 의 경로에있어야 
+파란색 s마크가 생긴다.
+크롬에서 http://localhost/sample/ 입장
+void 라서 반환이없으면 똑같은 이름의 jsp를 찾는다. 
+Get방식은 보안에 안좋다.
+● 131p
+★ 데이터의 크기가 형식보다(int) 보다크면 자동으로 안된다.
+● SampleDTOList
+SampleController.java > ex02Bean()
+TodoDTO.java > TodoDTO 의 Date는 java.util
+● new SimpleDateFormat("yyyy-MM-dd");  입력되는 타입이 같아야 값이 입력된다.
+
+★ http://localhost/sample/ex03?title=test&dueDate=2024-02-27 가 실행안되면
+void initBinder() 주석처리하고 실행하면 된다.
+138p까지 복습하기
+
+
