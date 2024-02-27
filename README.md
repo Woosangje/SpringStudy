@@ -171,77 +171,77 @@ server탭에서 톰켓연결할것<br>
 
 
 ★ 0227
-60p 이해할것
-★@Log4j 를 Log4j2로 수정할 것
-83 히카리 hikaricp
-https://mvnrepository.com/search?q=hikaricp
-2.7.4 버전 클릭
+60p 이해할것<br>
+★@Log4j 를 Log4j2로 수정할 것<br>
+83 히카리 hikaricp<br>
+https://mvnrepository.com/search?q=hikaricp<br>
+2.7.4 버전 클릭<br>
 
-root-context.xml > 84p 코드 입력 오타나면 안되니 복붙할것
-중간  beans 탭 눌러보기 hikariConfig, dataSource있는지 확인하기 있으면 객체화 시켰다는 것
+root-context.xml > 84p 코드 입력 오타나면 안되니 복붙할것<br>
+중간  beans 탭 눌러보기 hikariConfig, dataSource있는지 확인하기 있으면 객체화 시켰다는 것<br>
 
-● DataSourceTests.java , hotelTest.java같은 코드는 
+● DataSourceTests.java , hotelTest.java같은 코드는 <br>
 
-@RunWith(SpringJUnit4ClassRunner.class)	// junit으로 테스트 코드
-@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml") //참고할 파일
-@Log4j2 // Log4j2를 이용해서 로그 출력(콘솔에 찍히는 로그)
+@RunWith(SpringJUnit4ClassRunner.class)	// junit으로 테스트 코드<br>
+@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml") //참고할 파일<br>
+@Log4j2 // Log4j2를 이용해서 로그 출력(콘솔에 찍히는 로그)<br>
 
 붙이기
-●testConnection Junit 실행해보기
-★@코드네임은 자동완성할것 자동완성 안하면 코드오류 발생할 수 있음
-● MyBatis, spring에서 자주 사용함
-web.xml에서 히카리 밑에다가 mybatis 선언
-철자 틀리면 안되니 "mybatis복붙용 삭제금지".text에서 복붙하기
-★ 콘솔의 빨간색은 톰켓 로그 애러아님
-● 스프링과의 연동 처리
-Mapper는 매핑하는 것 쿼리와 자바를 매핑 , 
-~를 호출했을때 ~쿼리를 호출하는것
-● interface TimeMapper.java
-★★★ 주의사항 sql문 뒤에 ; 사용하면 오류
-★ Beans Graph탭이나, Namespaces 에 mybatis-spring 안보이면 이클립스 종료재시작 해보기
+●testConnection Junit 실행해보기<br>
+★@코드네임은 자동완성할것 자동완성 안하면 코드오류 발생할 수 있음<br>
+● MyBatis, spring에서 자주 사용함<br>
+web.xml에서 히카리 밑에다가 mybatis 선언<br>
+철자 틀리면 안되니 "mybatis복붙용 삭제금지".text에서 복붙하기<br>
+★ 콘솔의 빨간색은 톰켓 로그 애러아님<br>
+● 스프링과의 연동 처리<br>
+Mapper는 매핑하는 것 쿼리와 자바를 매핑 , <br>
+~를 호출했을때 ~쿼리를 호출하는것<br>
+● interface TimeMapper.java<br>
+★★★ 주의사항 sql문 뒤에 ; 사용하면 오류<br>
+★ Beans Graph탭이나, Namespaces 에 mybatis-spring 안보이면 이클립스 종료재시작 해보기<br>
 
 
-(testGetTime26)은 spring이 자동으로 만든 구현 클래스
+(testGetTime26)은 spring이 자동으로 만든 구현 클래스<br>
 
 ● 98p
-TimeMapper.java와 동일한 이름인 TimeMapper.xml 파일을 만든다, 대소문자 일치시키기
-★ 오타있으면 안되니  TimeMapper.xml 은 TimeMapper.text 복붙할것
-★ 다른곳에서 사용할 때 프로젝트명 :   <mapper namespace="org.zerock.mapper.TimeMapper"> 만 바꾸면 된다.
-● testGetTime2() 실행
-● 4.3 log4dbc-log4j2 설정 101p
-https://mvnrepository.com/search?q=log4jdbc 
-log4jdbc 검색
+TimeMapper.java와 동일한 이름인 TimeMapper.xml 파일을 만든다, 대소문자 일치시키기<br>
+★ 오타있으면 안되니  TimeMapper.xml 은 TimeMapper.text 복붙할것<br>
+★ 다른곳에서 사용할 때 프로젝트명 :   <mapper namespace="org.zerock.mapper.TimeMapper"> 만 바꾸면 된다.<br>
+● testGetTime2() 실행<br>
+● 4.3 log4dbc-log4j2 설정 101p<br>
+https://mvnrepository.com/search?q=log4jdbc <br>
+log4jdbc 검색<br>
 
-● 105p 출력안되면 서블릿과 mybatis 버전때문이다.  
-mybatis <version>3.5.15</version>로 변경하기
-pom.xml의 <!-- 구버전 주석처리함 --> 참조
-105p문제해결.txt 에서 복붙하고 name만 수정하여 사용
-<name>ex01</name>
-● 107p mvc.txt받은거 참고할것
-Controller 는 url로 오는걸 view로 뿌려줄지 model로 뿌려줄지 판단함
-WebApplication Context = 톰켓
+● 105p 출력안되면 서블릿과 mybatis 버전때문이다.  <br>
+mybatis <version>3.5.15</version>로 변경하기<br>
+pom.xml의 <!-- 구버전 주석처리함 --> 참조<br>
+105p문제해결.txt 에서 복붙하고 name만 수정하여 사용<br>
+<name>ex01</name><br>
+● 107p mvc.txt받은거 참고할것<br>
+Controller 는 url로 오는걸 view로 뿌려줄지 model로 뿌려줄지 판단함<br>
+WebApplication Context = 톰켓<br>
 
-책과 버전 다름
-mvc.txt받은거 참고할것
-크롬에서 http://localhost/controller/ 검색
-112p
-<url-pattern>/</url-pattern> 은 localHost의 /
-Request/Response 사용안함
-이제 <% value %> 사용안함
-★★★123p 여러번 읽어보기  ★★Model★★ Model에서 데이터를 땡겨온다.
-<context:component-scan base-package="org.zerock.controller" /> 의 경로에있어야 
-파란색 s마크가 생긴다.
-크롬에서 http://localhost/sample/ 입장
-void 라서 반환이없으면 똑같은 이름의 jsp를 찾는다. 
-Get방식은 보안에 안좋다.
-● 131p
-★ 데이터의 크기가 형식보다(int) 보다크면 자동으로 안된다.
-● SampleDTOList
-SampleController.java > ex02Bean()
-TodoDTO.java > TodoDTO 의 Date는 java.util
-● new SimpleDateFormat("yyyy-MM-dd");  입력되는 타입이 같아야 값이 입력된다.
+책과 버전 다름<br>
+mvc.txt받은거 참고할것<br>
+크롬에서 http://localhost/controller/ 검색<br>
+112p<br>
+<url-pattern>/</url-pattern> 은 localHost의 /<br>
+Request/Response 사용안함<br>
+이제 <% value %> 사용안함<br>
+★★★123p 여러번 읽어보기  ★★Model★★ Model에서 데이터를 땡겨온다.<br>
+<context:component-scan base-package="org.zerock.controller" /> 의 경로에있어야 <br>
+파란색 s마크가 생긴다.<br>
+크롬에서 http://localhost/sample/ 입장<br>
+void 라서 반환이없으면 똑같은 이름의 jsp를 찾는다. <br>
+Get방식은 보안에 안좋다.<br>
+● 131p<br>
+★ 데이터의 크기가 형식보다(int) 보다크면 자동으로 안된다.<br>
+● SampleDTOList<br>
+SampleController.java > ex02Bean()<br>
+TodoDTO.java > TodoDTO 의 Date는 java.util<br>
+● new SimpleDateFormat("yyyy-MM-dd");  입력되는 타입이 같아야 값이 입력된다.<br>
 
-★ http://localhost/sample/ex03?title=test&dueDate=2024-02-27 가 실행안되면
+★ http://localhost/sample/ex03?title=test&dueDate=2024-02-27 가 실행안되면<br>
 void initBinder() 주석처리하고 실행하면 된다.
 138p까지 복습하기
 
