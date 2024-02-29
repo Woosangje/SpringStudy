@@ -245,4 +245,119 @@ TodoDTO.java > TodoDTO 의 Date는 java.util<br>
 void initBinder() 주석처리하고 실행하면 된다.
 138p까지 복습하기
 
+0228<br>
+★135p [] 설명<br>
+return "/sample/ex04" ;			/sample 반드시 붙이기<br>
+★★★ 웹화면에 hello.jsp 보일경우 하단 톰켓에서 add/remove 설정해보자.<br>
+
+● jackson-databind<br>
+https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind<br>
+2.9.4 버전<br>
+F12 > Network > ctrl + r <br>
+★ HttpHeaders 는 import org.springframework.http.HttpHeaders; 로 자동완성할것<br>
+
+149p<br>
+https://mvnrepository.com/ > commons-fileupload 검색 > Apache Commons FileUpload로 입장 ><br>
+1.3.3 버전 코드 복붙<br>
+c 드라이브 > 파일이름upload로 생성 > 파일 tmp 생성<br>
+servlet-context.xml > <!--  파일 업로드용 5가지 처리 -->이하 코드 추가<br>
+오타나면 안되니 받은 텍스트 붙여넣기<br>
+★<beans:property name="defaultEncoding" value="utf-8"></beans:property> 는 한글깨짐 방지<br>
+★ value="file:/C:/upload/tmp"></beans:property> 파일 경로 주의<br>
+★★★ 주석 선언할때마다 성실하게 입력해넣기<br>
+@GetMapping("/exUpload") 의 exUpload는 .jsp<br>
+154p<br>
+유튜브에 "구멍가게 코딩단 입력" 코드로 배우는 스프링 2024다보기<br>
+
+★★★C:\oraclexe\app\oracle\product\11.2.0\server\bin 집노트북에 복붙하기<br>
+C:\Program Files\Common Files\Oracle\Java\javapath<br>
+
+error_page.jsp 실행하고나서 주소 age=에 aaa를 넣고 실행해본다.<br>
+http://localhost/sample/ex04?name=kkw&age=aaa&page=3<br>
+
+★★web.xml 철자틀리면 톰켓에서 오류 생김<br>
+<init-param> <!-- 예외처리를 톰켓이 아닌 spring에서 처리할 것 --><br>
+	<param-name>throwExceptionIfNoHandlerFound</param-name><br>
+	<param-value>true</param-value><br>
+</init-param><br>
+
+● 163p <br>
+이제 pstmt 사용안함<br>
+paging api사용<br>
+DAO 대신 Mapper사용<br>
+패키지 나누는 이유 관심사의 분리<br>
+엑셀실행 엑셀은 자료관리용 <br>
+"파일목록문서화"<br>
+보기 > 경로  > 틀고정<br>
+우클릭 > 하이퍼링크 제거<br>
+
+● 프로젝트 새로만듬 board<br>
+★<web-app > 빨간줄 생기는건 버전이 낮아서 servers > web.xml에서 붙여넣기<br>
+★pom 0228완전판 board web.xml에 복붙하기<br>
+★56줄 <!-- root-context.xml 에 삽입 " 을 복사해서 root-context.xml에 붙여넣기<br>
+
+★102줄 <!-- root-context.xml 코드 변경  "을 복붙하면 org.zerock.mapper없어서 오류날수 있음<br>
+★root-context. "<mybatis-spring:scan" 빨간줄나면 ex01번에 있는거 복붙하고 그래도 <br>
+빨간줄 나는건 Namespaces 탭에서 mybatis on하면된다.<br>
+★ <context:component-scan base-package="org.zerock.sample"></context:component-scan>
+는 지워도 된다.<br>
+시작용 board백업폴더<br>
+★프론트는 결론 sql자격증 좋음<br>
+board가 책의 ex02<br>
+★ test경로의 폴더는 export할때 안들어감 sql넣기 좋음<br>
+●org.zerock.persistence 패키지에 있는 dataSourceTest.java,JDBCTests.java 복붙 하기<br>
+junit으로 실행<br>
+★ 에겔에서 (i) 는 인터페이스란뜻<br>
+★ unread 나오는건 나중에 확인ㅍ
+★ onMethod_ 빨간줄 뜨는건 lombok설치안되서 그렇다 lombok.jar더블클릭해서 설치하지 말고 cmd에서
+설치할것<br>
+
+
+★ 0229<br>
+●★ 수업자료에서 "spring-tool-suit-3.9.18.zip " 가져오기 > 압축풀지말고 더블클릭해서 sts-3.9.18.RELEASE<br>
+폴더 드래그해서 D: 드라이브에 넣기<br>
+>인터넷에서 lombok 검색후 설치 > cmd에서 d: > java -jar lombok.jar<br>
+★ sts.exe실행 안되면 STS.ini에서 -javaagent:D:\sts-3.9.18.RELEASE\lombok.jar 경로 수정<br>
+★ File > open Projects from File System > 적용안되면 sts의 severs에 톰켓 연결<br>
+★ Spring MVC Project 이제 지원안해서 복붙해서 사용하는중<br>
+7장 자바 설정은 할필요없음<br>
+xml과 interface가 한세트 <br>
+제일먼저 DB부터 만든다 DB를 보고 테이블을 구현 콘솔까지만 구현하면된다.<br>
+jsp에서 쓰던 ? 대신 #{속성}을 사용한다.<br>
+인터페이스 안의 메서드는 조장이 짜준다.<br>
+
+<insert id="insert">의  insert는 메서드 명과 일치<br>
+<insert>안에서도 ; 사용하지 말것<br>
+lownum사용해서 seq_num 중복만 없으면 상관없음<br>
+unread신경쓰지 말고 날짜만 확인하기<br>
+198p DB믹스는 Service 계층에서 한다. ex) 틀리면 선생님에게혼남<br>
+느슨한 (select *  사용하란 뜻)<br>
+mapper는 대부분 DB용어<br>
+context는 메모리영역<br>
+문제생기면 이클립스 종료재실행 해보기<br>
+boot도 10년쓴다.<br>
+
+★ 메서드 별로 어디서어디로 갔다 엑셀에 정리하기<br>
+★ @RequestMapping("/board/*") ("/~" ) 빼먹지 말기<br>
+★ 문제시 Mudule 에 /인지 /controller인지 확인<br>
+★ log.info를 파일로 만든다<br>
+★★ 톰켓을 안쓰고 사용하는 방법 class BoardControllerTests 는 가짜 mvc<br>
+@Before,  junit걸로 import<br>
+(ctx).build(); 는 build패턴<br>
+★ BoardControllerTests는 servlect-context.xml도 필요하다<br>
+@ContextConfiguration({"file:src/main/webapp/WEB-INF/spring/root-context.xml",<br>
+file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"}) //참고할 파일
+로 수정할것<br>
+@WebAppConfiguration<br>
+●MockMvc.txt복사해서 붙여넣기<br>
+String register() 값이 두개있는 경우는 성공시/실패시<br>
+★★★★ unread 오류 해결 정보<br>
+테이블 조회할 때 콘솔창에서 unread 되는거 해결방법인데 , property에 BoardVO 변수명이랑 맞춰주면 될 것 같아요! column은 테이블 컬럼명이에욤<br>
+★ nvarchar을 n붙여너 unread생긴것<br>
+★ rog.zerock.controller 철자틀려서 오류생겼었음 com<br>
+★ return "redirect:/board/list"; // 처리후 돌아갈 페이지     같은거 엑셀에저장<br>
+★★ BoardMapper.txt 붙여넣기<br>
+
+다음주 jsp연결<br>
+
 
