@@ -358,6 +358,54 @@ String register() 값이 두개있는 경우는 성공시/실패시<br>
 ★ return "redirect:/board/list"; // 처리후 돌아갈 페이지     같은거 엑셀에저장<br>
 ★★ BoardMapper.txt 붙여넣기<br>
 
-다음주 jsp연결<br>
 
+
+0304<br>
+get매핑할때 / 사용할것<br>
+controller에서 jsp로 간다.<br>
+백을 완성시켜 놓고 프론트에 붙인다.<br>
+
+jsp , html ,  분기 , 서비스 , 매핑(메퍼) , 오라클<br>
+c, insert는  int로 반환 ~개 생성되었습니다.<br>
+r, list<br>
+
+★ mybatis , 히카리cp 사용안하는 회사도 있다.<br>
+프론트 있는 상태에서 개발하는 것을 추천<br>
+
+● 10-5 바탕화면의 spring폴더 > bootstrap > 게시판 만들었던것에 붙일것음<br>
+webapp > resources에 css,js 넣기<br>
+
+@RequestMapping("/board/*")은 폴더 경로<br>
+board/는 클래서역활 /list는 메서드 역할<br>
+list에 부트스트랩 table 코드 복붙, 톰켓실행하고 크롬에서 실행하면 경로 때문에 깨져보임<br>
+ctrl + shifg + / 주석처리<br>
+크롬 google jquery cdn 검색<br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script><br>
+
+받은 부트스트랩 새로고침할때 매뉴 사라지지 않는 문제<br>
+footer의 ready.function에<br>
+ $(".sidebar-nav")<br>
+        .attr("class", "sidebar-nav navbar-collapse collapse")<br>
+        .attr("aria-expanded", "false")<br>
+        .attr("style","height:1px")<br>
+추가<br>
+
+0304 list.jsp파일에 jsp헤더list.txt파일 복붙하기<br>
+자바에서 mapper일경우 mapper.xml을 꼭 가보기<br>
+★ 오타나면 null point Exception 오류 발생한다.<br>
+jstl 상단에 <%@~%> 넣기<br>
+● fmt 작성할경우 상단에 <%@" 스페이스 눌러서 http://java.sun.com/jsp/jstl/fmt 추가한다. 안하면 출력안됨<br>
+★오타 게시판 mybatis문제 생길경우 jsp에서 content를 context로 적었는지  철자 확인<br>
+● 한글처리 web.xml<br>
+
+
+이제 등록 할때 href대신 자스사용할거임<br>
+249<br>
+내일부터 페이징 처리, <br>
+★★★ jsp에서 java코드들 주석처리하면 웹에서 F12누를경우 주석이 다보인다.<br>
+http://localhost/board/register<br>
+엑셀파일 마무리<br>
+sts.exe Database 설치 방법:  help > update > update/release/2021/03  로 검색<br>
+~267<br>
+파일목록문서화 완성하기<br>
 
