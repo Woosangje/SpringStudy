@@ -409,3 +409,92 @@ sts.exe Database 설치 방법:  help > update > https://download.eclipse.org/re
 ~267<br>
 파일목록문서화 완성하기<br>
 
+
+※0305<br>
+엑셀 메소드 별로 쪼개기<br>
+268~<br>
+● id="dataTables-example" 넣으면 페이징과 search가 보인다<br>
+● order by의 문제 268p  order by 대신 인덱스를 사용하자<br>
+[CDATA]안에는 주석처리 안하는게 좋음<br>
+BoardServiceImpl빨간줄 생기면<br>
+● 14페이징 화면 처리 302P<br>
+PageDTO 공식이지 써먹으면된다.<br>
+페이지네이션 https://getbootstrap.com/docs/4.3/components/pagination/<br>
+
+★★350p까지의 완성본 board(페이징, 다중검색)<br>
+다중항목 검색까지<br>
+목표350p336<br>
+★ BoardMapper.xml 에서 resultType을 resultMap으로 입력해도 오류발생하여 웹에서 출력안된다.<br>
+
+※0306<br>
+board(페이징,다중검색) 파일 안의 src board안에 복붙<br>
+BoardMapper.xml db의 crud를 쿼리 처리<br>
+get은 게시물 클릭할때 가져오는거<br>
+register.jsp 게시물 작성<br>
+● board 복붙했으면 오른쪽 reflash 클릭<br>
+● 웹에서 실행시 이상하면 톰켓다시설정할것 <br>
+
+jsp 2000년도 유행<br>
+spring 2010년<br>
+화면은 고정된상태에서 모달마냥 crud가 변경되는것 ajax<br>
+rest방식<br>
+● 안드로이드 프로그래밍책 한번읽어보기<br>
+주소에 ?가 없으면 rest 방식<br>
+rest 방식은 객체가 아님<br>
+
+353p Rest 프로젝트 생성<br>
+
+★Rest프로젝트와 board프로젝트의 xml은 다르다 복붙주의<br>
+https://mvnrepository.com/<br>
+jackson 검색 > jackson Databind 클릭<br>
+빨간색경고는 보안에 취약함 2.9.6버전 , 실무에서는 다른버전<br>
+jackson xml 검색 > Jackson Dataformat XML » 2.9.6<br>
+gson 검색 > Gson 2.8.2버전 <br>
+
+★★★ value = "/getText" = localhost/rest/getText<br>
+도메인은 객체들<br>
+● SampleControllerTests 위에 <br>
+@RunWith(SpringJUnit4ClassRunner.class)<br>
+
+//Test for Controller<br>
+@WebAppConfiguration<br>
+
+@ContextConfiguration({ "file:src/main/webapp/WEB-INF/spring/root-context.xml",<br>
+		"file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" })<br>
+@Log4j2<br>
+
+
+@Setter(onMethod_ = { @Autowired })<br>
+	private WebApplicationContext ctx;<br>
+
+	private MockMvc mockMvc;<br>
+
+	@Before<br>
+	public void setup() {<br>
+		this.mockMvc = MockMvcBuilders.webAppContextSetup(ctx).build();<br>
+	}<br>
+
+붙여넣기<br>
+
+★★★ SampleControllerTests.java의 testConvert() 작성시<br>
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;<br>
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;<br>
+붙여넣기<br>
+
+testConvert() 웹에서 실행방법(오류pdf참조)<br>
+웹 설정의 확장프로그램에서 chrome 웹스토어 >  rest검색 > Yet Another REST Client > 웹페이지 주소창 오른쪽 <br>
+http://localhost/rest/ticket<br>
+{"tno":123, "owner":"kkw","grade":"vvip"}<br>
+
+● 17 Ajax 댓글처리 375p<br>
+board 프로젝트로 이동<br>
+5.3.21 를 5.0.7.RELEASE 로 버전을 낮춘다.<br>
+.xml에 json코드도 추가해야한다.<br>
+
+● 오류있을 경우 "board(댓글시작)"파일 붙여넣기<br>
+
+480p까지 aop, 트랜잭션 읽기<br>
+
+★ 386p delete메소드의 targetRno는 int가 아니라 long이다.<br>
+★ 이클립스설치하고 visualstudio 깔면 꼬인다.<br>
+
