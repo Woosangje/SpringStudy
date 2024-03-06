@@ -405,7 +405,7 @@ jstl 상단에 <%@~%> 넣기<br>
 ★★★ jsp에서 java코드들 주석처리하면 웹에서 F12누를경우 주석이 다보인다.<br>
 http://localhost/board/register<br>
 엑셀파일 마무리<br>
-sts.exe Database 설치 방법:  help > update > update/release/2021/03  로 검색<br>
+sts.exe Database 설치 방법:  help > update > https://download.eclipse.org/releases/2021-03  로 검색<br>
 ~267<br>
 파일목록문서화 완성하기<br>
 
