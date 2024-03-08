@@ -498,3 +498,43 @@ board 프로젝트로 이동<br>
 ★ 386p delete메소드의 targetRno는 int가 아니라 long이다.<br>
 ★ 이클립스설치하고 visualstudio 깔면 꼬인다.<br>
 
+
+#0307
+5.0.7 RELEASE 로 수정
+board(댓글,tx.app)보고 버전 수정 할것
+★★★ 384p Long bno 가 아니라 rno
+●aop-tx 프로젝트생성
+
+메이븐 레파지토리 > aspectjrt
+
+이거 0307board알집의 pom.xml에 붙여넣기
+			<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency> <!-- AOP 관련 설정 추가(객체용)-->
+
+★ 나이같은건 db에 넣지 말것
+DB를 두개 넣고싶을때 Transational 사용한다.
+● board(댓글,tx,aop) 보고 마무리하기
+
+★★★ 421p 문제있다  board(댓글,tx,aop) 보고 CloseBtn'을 register로 수정하기
+★ js에서 } 하나 더있어서 팝업 안생긴것 정렬 잘하기
+
+댓글완료)444p까지
+연봉높일려면 form이 아니라 rest사용해야한다.
+
+0308
+ex01프로젝트를 복사하여 filedata이름으로 생성
+\\192.168.0.200
+http://localhost/uploadFormAction 파일넣으면 404에러가 정상
+jsp 만들어야한다.
+
+488p 604p까지
+서버에 무리가없는데 이상하게 안되면 크롬에서 쿠키삭제할것 또는 vm재부팅할것
+● 515p 이미지 업로드시 파일 2개 받게된다.
+탭의search로 변수 입력해서 찾아보자
+ajax rest사용해야 연봉이 오른다.
+520까지
+attachDTO.setFileName(uploadFileName); 책에있는지 확인
