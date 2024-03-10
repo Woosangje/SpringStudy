@@ -235,6 +235,7 @@ Request/Response 사용안함<br>
 void 라서 반환이없으면 똑같은 이름의 jsp를 찾는다. <br>
 Get방식은 보안에 안좋다.<br>
 ● 131p<br>
+★ 131p aaa 실행 안될시 톰켓 /controller 수정되어있는지확인
 ★ 데이터의 크기가 형식보다(int) 보다크면 자동으로 안된다.<br>
 ● SampleDTOList<br>
 SampleController.java > ex02Bean()<br>
