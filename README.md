@@ -539,3 +539,66 @@ jsp 만들어야한다.
 ajax rest사용해야 연봉이 오른다.
 520까지
 attachDTO.setFileName(uploadFileName); 책에있는지 확인
+
+
+
+※ 0311<br>
+Security<br>
+Spring = 반자동화<br>
+605~738p까지 진행해보기<br>
+Intellij<br>
+● Project Exploerer탭 에서01ex 복사해서  Security프로젝트 생성<br>
+pom.xml을 board프로젝트의 pom.xml으로 마추기<br>
+
+Maven에 spring security 검색<br>
+Spring Security Core <br>
+5.0.6 복사해서 4번 붙여 넣고<br>
+3번 <artifactId>spring-security-core</artifactId> 를 책처럼 수정한다.<br>
+
+security-context.xml 오류있으니<br>
+xsi:schemaLocation=  ~<br>
+http://www.springframework.org/schema/security/spring-security-5.0.xsd<br>
+의 -5.0를 제거할것<br>
+● 서버 add & Move 설정하고 Modules / 설정할것<br>
+org.zerock.controller로 이름수정하고 servlet-context에 <filter-name>springSecurityFilterChain</filter-name><br>
+있는지 확인<br>
+
+서버 실행해보면 SEVERE: 필터 [springSecurityFilterChain]을(를) 시작하는 중 오류 발생<br>
+나온다.<br>
+
+안되면 수업자료<br>
+
+● @RequestMapping("/sample/*") 는 폴더경로 smaple폴더<br>
+615p
+Ldap = 라이트 디렉토리 서비스, 이거하면 좋은점이 학교에서 공부하던거 집에서 똑같이 상용할 수 있음<br>
+access=의 "permitAll" , ROLE_MEMBER 이미 만들어져 있는 예약어<br>
+●/login.jsp는 테스트용이라 우리가 안만들었다.<br>
+★ {noop}실무에서 사용하지 말기<br>
+
+F12 > 탭 Application > 좌측 Cookies > delete<br>
+
+625p 로그인창에서 새로고침하기전에 쿠키세션 삭제하고 새로고침하기<br>
+멤버로그인상태에서 admin주소로 이동할시 잘못된 경로라고 알려주는게 필요<br>
+
+Class CustomAccessDeniedHandler 빨간줄뜨면 add ~ 선택 또는 코드입력<br>
+● 630p 실행안되면 <bean 입력됐는지 확인 ,그래도 오류뜨면 context0311.txt 복붙하기<br>
+_csrf 해킹공격에 대응하는 코드<br>
+★ 게시판 10번 만들어보기<br>
+605~643p까지완성된파일<br>
+완성본 옮기기605~738p 7. sec(end)파일<br>
+
+xhr은 csrf, security용<br>
+646p 로그인하면 500오류가 정상, INFO 책내용대로 나오고 에러도 책대로 나온다.<br>
+<security:user-service> {noop} ~ 주석처리해야 한다.<br>
+
+		<!-- 653p--><br>
+		<dependency><br>
+			<groupId>org.springframework</groupId><br>
+			<artifactId>spring-test</artifactId><br>
+			<version>${org.springframework-version}</version><br>
+		</dependency>   <br>
+
+pom.xml 히카리 mybatis주석달아보기<br>
+
+
+
