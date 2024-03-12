@@ -582,10 +582,12 @@ F12 > 탭 Application > 좌측 Cookies > delete<br>
 
 Class CustomAccessDeniedHandler 빨간줄뜨면 add ~ 선택 또는 코드입력<br>
 ● 630p 실행안되면 <bean 입력됐는지 확인 ,그래도 오류뜨면 context0311.txt 복붙하기<br>
+//"{noop}member"  주석처리하면 안된다.
 _csrf 해킹공격에 대응하는 코드<br>
 ★ 게시판 10번 만들어보기<br>
 605~643p까지완성된파일<br>
 완성본 옮기기605~738p 7. sec(end)파일<br>
+
 
 xhr은 csrf, security용<br>
 646p 로그인하면 500오류가 정상, INFO 책내용대로 나오고 에러도 책대로 나온다.<br>
