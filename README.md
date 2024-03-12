@@ -605,4 +605,22 @@ xhr은 csrf, security용<br>
 pom.xml 히카리 mybatis주석달아보기<br>
 
 
+※ 0312
+(교재판매),(도서대여) 637<br>
+673 null 뜨는거 선생님의 pom.xml비교해볼것<br>
+선생님이 https://github.com/lonen8188/Spring 에다 올림<br>
+깃브런치 master로 바꾸면 어제거 보임 customLogin.jsp <br>
+LogAdvice 참조<br>
+
+sample/admin 673p 잘안되면 넘어가기<br>
+board에다 붙여서 해보기<br>
+★ 656p 오류발생시 i를 1로 입력했는지 확인<br>
+
+xml에서 mybatis 사용하려면 <!DOCTYPE mapper ~ mybatis> 있어야한다. 붙여넣기<br>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"><br>
+
+● 662p MemberMapper.xml경로 org, zerock, mapper일일이 클릭해서 들어간다음 생성한다.<br>
+○ id="authMap" 를 autoMap으로 오타<br>
+
+
 
