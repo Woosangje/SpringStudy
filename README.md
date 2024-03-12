@@ -304,12 +304,13 @@ DAO 대신 Mapper사용<br>
 는 지워도 된다.<br>
 시작용 board백업폴더<br>
 ★프론트는 결론 sql자격증 좋음<br>
-board가 책의 ex02<br>
+
+● board가 책의 ex02 170p<br>
 ★ test경로의 폴더는 export할때 안들어감 sql넣기 좋음<br>
 ●org.zerock.persistence 패키지에 있는 dataSourceTest.java,JDBCTests.java 복붙 하기<br>
 junit으로 실행<br>
-★ 에겔에서 (i) 는 인터페이스란뜻<br>
-★ unread 나오는건 나중에 확인ㅍ
+★ 엑셀에서 (i) 는 인터페이스란뜻<br>
+★ unread 나오는건 나중에 확인
 ★ onMethod_ 빨간줄 뜨는건 lombok설치안되서 그렇다 lombok.jar더블클릭해서 설치하지 말고 cmd에서
 설치할것<br>
 
