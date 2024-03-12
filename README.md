@@ -585,6 +585,7 @@ Class CustomAccessDeniedHandler 빨간줄뜨면 add ~ 선택 또는 코드입력
 //"{noop}member"  주석처리하면 안된다.
 _csrf 해킹공격에 대응하는 코드<br>
 ★ 게시판 10번 만들어보기<br>
+● 630p bean id="customLoginSuccess"~ 입력 빼먹지 않기
 605~643p까지완성된파일<br>
 완성본 옮기기605~738p 7. sec(end)파일<br>
 
