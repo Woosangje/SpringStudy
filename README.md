@@ -625,3 +625,37 @@ xml에서 mybatis 사용하려면 <!DOCTYPE mapper ~ mybatis> 있어야한다. �
 
 
 
+※ 0313
+
+회원2명 게시판 2명
+팀원끼리 DB 타입 문자길이 일치시켜야한다.
+주석달기
+667p WARN adim90 에러 있어도 정상
+ERROR org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilte
+★ 로그인페이지에 새로고침하고나서 쿠키를 삭제해야 admin90에 로그인할수 있다.
+
+★ xml에 <dependency> 같은곳에 이유없이 빨간줄오류 뜨면 코드 지웠다 복붙해보기
+
+○185p설명 파일 복붙후에 실행오류 나는 이유는 BoardMapper.xml에 <select id="getList"~>있어서 그렇다.
+
+● xerd 열기: 7. SpringProject(교재판매) >  boardshop01 > webapp > WEB-INF > erd > 
+상단 탭 > erd >
+erd를 만든다음 테이블에 밀어 넣는다.
+jdbc 드라이버 파일선택 > ojdbc8.jar 넣으면됨
+★ 쇼핑몰 예제할때 exerd설치하지말고 선생님걸로 설치할것
+
+○mockMvc 은 console.log 같은것
+
+
+
+● jsp상단에 붙이기
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+
+★ 빛좋은 개살구 BookTopia제대로 만들려면 3달은 있어야함 어디까지할수있나 해보는것
+BookTopia 세팅다되어있어서 MVware통째로 가져가야함 
+
+테이블 추가시 한글깨지면 242p참조
+250p까지
+
+
