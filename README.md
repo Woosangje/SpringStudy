@@ -638,24 +638,47 @@ ERROR org.springframework.security.web.authentication.UsernamePasswordAuthentica
 
 ○185p설명 파일 복붙후에 실행오류 나는 이유는 BoardMapper.xml에 <select id="getList"~>있어서 그렇다.
 
-● xerd 열기: 7. SpringProject(교재판매) >  boardshop01 > webapp > WEB-INF > erd > 
-상단 탭 > erd >
-erd를 만든다음 테이블에 밀어 넣는다.
-jdbc 드라이버 파일선택 > ojdbc8.jar 넣으면됨
-★ 쇼핑몰 예제할때 exerd설치하지말고 선생님걸로 설치할것
+● xerd 열기: 7. SpringProject(교재판매) >  boardshop01 > webapp > WEB-INF > erd > <br>
+상단 탭 > erd ><br>
+erd를 만든다음 테이블에 밀어 넣는다.<br>
+jdbc 드라이버 파일선택 > ojdbc8.jar 넣으면됨<br>
+★ 쇼핑몰 예제할때 exerd설치하지말고 선생님걸로 설치할것<br>
 
-○mockMvc 은 console.log 같은것
+○mockMvc 은 console.log 같은것<br>
 
 
 
 ● jsp상단에 붙이기
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%><br>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%><br>
 
-★ 빛좋은 개살구 BookTopia제대로 만들려면 3달은 있어야함 어디까지할수있나 해보는것
-BookTopia 세팅다되어있어서 MVware통째로 가져가야함 
+★ 빛좋은 개살구 BookTopia제대로 만들려면 3달은 있어야함 어디까지할수있나 해보는것<br>
+BookTopia 세팅다되어있어서 MVware통째로 가져가야함 <br>
 
-테이블 추가시 한글깨지면 242p참조
-250p까지
+테이블 추가시 한글깨지면 242p참조<br>
+
+※ 0314<br>
+
+10.프로젝트v1.03 3개pdf , 프로젝트_파일목록.ex 4개가 세트<br>
+
+화면 정의서:  고객이 사용하는 메뉴얼<br>
+세무 회계 물류 부전공 필요함<br>
+조별프로젝트의 핵심요소는 불편함 해소 로직화<br>
+boot에서 카카오api연결 spring에서는 나중에<br>
+구멍가게 코딩단<br>
+
+○뒤로가기 문제 해결 256p<br>
+
+★ 10이상 20미만을 sql에서 출력하는 방법<br>
+select bno, title, content from(<br>
+	select /*+INDEX_DESC(tbl_board pk_board) */<br>
+	rownum rn, bno, title, content from tbl_board where rownum <=20)<br>
+	where rn > 10;<br>
+
+★ postman.com 깔아서 하는게 좋음<br>
+
+317p까지 복습 8시간 67페이지 진행<br>
+
+
 
 
