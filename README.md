@@ -680,5 +680,27 @@ select bno, title, content from(<br>
 317p까지 복습 8시간 67페이지 진행<br>
 
 
+※ 0315<br>
+자료 깃 공부 header master branch 공부하기<br>
 
+BoardMapper BoardController BoardService, BoardSeviceImpl<br>
+335p까지<br>
+와차피디아<br>
+게시글 삭제,공지사항,관리자페이지 , 영화<br>
+○ 관리자페이지 > 웹페이지 선택 "와차최상단에 광고 넣는 탭 만들어보자<br>
+1.좌측탭 최상단 배너관리 만들어보자<br>
+
+
+부트스트랩 버전 5로<br>
+cdn<br>
+
+● 집에서 <br>
+부트스트랩 사이트에서 그리드, 콘테이너, 네비게이션,오픈캔버스 보기,<br>
+
+클래스보기<br>
+프론트에 힘쓰지 않기<br>
+
+★ .jsp 실행하려면 Controller에서 GetMapping()메소드 만들어야한다.<br>
+adminSample.jsp 만들려고함<br>
+와차adminSample 왼쪽탭 아이콘 만들어서 넣어보기<br>
 
