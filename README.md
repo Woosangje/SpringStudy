@@ -705,3 +705,33 @@ adminSample.jsp 만들려고함<br>
 와차adminSample 왼쪽탭 아이콘 만들어서 넣어보기<br>
 
 완성된 예제에다가 주석달아놓기
+
+
+
+
+#0318
+10-6
+xml의 <mapper namespace="org.zerock.mapper.BoardMapper">는 BoardMapper.java
+
+첫광고 설정 세팅
+광고 이미지, 광고주소 http/
+
+번호
+제목
+게시자
+주소(http)
+작성일
+수정일
+
+번호
+제목
+내용
+게시자
+이미지(728x90)	(파일경로, 이름으로 db저장)
+웹페이지 주소(http)
+작성일
+수정일
+광고로 선택하기(광고를 선택한다고 다른 DB값들은 크게변하지 않는다.
+304-05경로
+
+bannerList 테이블 출력하기
