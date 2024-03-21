@@ -709,29 +709,46 @@ adminSample.jsp 만들려고함<br>
 
 
 
-#0318
-10-6
-xml의 <mapper namespace="org.zerock.mapper.BoardMapper">는 BoardMapper.java
-
-첫광고 설정 세팅
-광고 이미지, 광고주소 http/
-
-번호
-제목
-게시자
-주소(http)
-작성일
-수정일
-
-번호
-제목
-내용
-게시자
-이미지(728x90)	(파일경로, 이름으로 db저장)
-웹페이지 주소(http)
-작성일
-수정일
-광고로 선택하기(광고를 선택한다고 다른 DB값들은 크게변하지 않는다.
-304-05경로
+#0318<br>
+10-6mv 인텔리제이 프로젝트 파일<br>
+★ xml의 <mapper namespace="org.zerock.mapper.BoardMapper">는 BoardMapper.java경로<br>
 
 bannerList 테이블 출력하기
+
+#0319<br>
+관리자 페이지 목록,생성 페이지pdf 제작<br>
+
+#0320<br>
+관리자 페이지<br>
+목록,생성 초벌 프론트 제작<br>
+
+★ aws c언어 가져가기<br>
+
+ex00으로 응용 톰켓연동하고 붙여넣기<br>
+체크박스 값 어떻게 보낼지 생각해보기<br>
+관리자페이지 디자인신경쓰지 않기<br>
+
+멤버관리자 페이지는 나중에 만들기<br>
+영화 리스트 DB연결완료<br>
+
+#0321<br>
+★ security 참고하기 부트용이라 위쪽만좀 틀리다.<br>
+https://velog.io/@wooryung/Spring-Boot-Spring-Security%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%98%EC%97%AC-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0<br>
+
+★<mapper namespace="com.firstgroup.movies.mapper.MoviesMapper"> 는 MoviesMapper(i).java이다<br>
+selectKey keyProperty="movBno" 는 MovieVO의 변수 moveBno<br>
+★ https://all-record.tistory.com/112<br>
+util.Date는 오라클 날짜타입과 연동불가 /그런데 희진씨 sql.date 사용했는데 안됨 <br>
+
+● MovieMapper > MovieServiceImpl.java > MovieServiceTests.java<br>
+
+관리자 Controller만들기<br>
+○ 인터페이스는 같이 사용<br>
+○ Service는 DB끼리 섞어서 사용할떄 사용<br>
+● MovieMapper(i) 의 getList() 매개변수 MovesVO로 변경<br>
+●MovieServiceTests.java, AdminController 생성<br>
+
+spring boot 할때 jsp사용안함 ajax사용안함 부트스트랩 안씀 바닐라 js사용안함<br>
+
+내일214p작성하기<br>
+
