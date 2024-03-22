@@ -752,3 +752,54 @@ spring boot 할때 jsp사용안함 ajax사용안함 부트스트랩 안씀 바�
 
 내일214p작성하기<br>
 
+
+#0322
+● 원격데스크톱 앱에서 사용하느방법
+찾기 > wf.msc > 인바운드 규칙 > 새규칙& tcp > 80 >이름 : 웹프로젝트포트 > 새로고침
+한번더  새규칙 > 3389 > 이름: 3389원격데스크톱
+암호를 잘걸어야한다.
+●찾기 > 컴퓨터관리 > 로컬사용자및 그룹 > 사용자 > mit 우클릭 > 암호설정 (진짜암호로)a650x
+우클릭 > 시스템 > 오른쪽에 원격 데스크톱 켬 >
+가상 머신(ex10-5) > 오른쪽클릭 setting > Network Adapter > Bridged : Connected
+하단 탭 네트워크클릭 > 오른쪽 어댑터 옵션 변경 >속성 >  (TCP/IPv4) >
+IP주소와 기본 게이트웨이의 111를 아니라
+IP주소는 		0.223 
+기본게이트 웨이는  0.1
+주소 수정하면 mv종료하기
+setting > Nestwork Adapter > Advanced... > a하단 MAC Address 의 Generator 몇번눌러주는 변경됨
+(MAC Address가 중복되면 해킹당할수도 있다.)
+>ok
+● 찾기 > 원격 데스크톱 연결 > ez304.iptime.org:3445
+아이디: mit  패스워드: a650x
+
+핸드폰 스토어에서 rdp 검색 Remote Desktop 설치
+pc name : ex304.iptime.org:전화번호4
+User Account : mit/pw
+
+
+
+
+★MoviesControllerTests.java안의 mockMvc.perform(MockMvcRequestBuilders.get("/board/list"))
+는 boardController.java @RequestMapping("/board/*")와 일치시켜야 한다.
+"/board/"는 매핑용 클래스 이름 "list"는 메소드 이름
+
+댓글은 restController로 ajax사용하려고만듬
+
+★ postman.com , Postman Interceptor깔아서 하는게 좋음 (선생님이 다시설명)
+크롬 추가 뿐만 아니라 exe다운로드도 해주어야한다.
+★.param("movBno", "2")의 movBno는 변수명 대소문자 구별해야한다.
+
+● MovieMapper(i) 의 getList() 매개변수 MovesVO로 변경
+●MovieServiceTests.java, AdminController 생성
+
+공지사항 페이지 만들기 백부터
+멤버 2개 섞어서
+192.168.0.224
+
+●다른사람들이 만든것 
+로그인 회원가입, 메일로 비밀번호 보내기, 파일업로드, 지도.api, 결제
+문의 게시판 문의종류 만들기
+★ 깃에 src와 pom.xml파일만 올리기
+
+4월5일까지
+
