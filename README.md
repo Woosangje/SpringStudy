@@ -170,7 +170,7 @@ server탭에서 톰켓연결할것<br>
 ★★ autowrit? 오류 뜨면 lombok 설치안되있는것<br>
 
 
-★ 0227
+★ 0227<br>
 60p 이해할것<br>
 ★@Log4j 를 Log4j2로 수정할 것<br>
 83 히카리 hikaricp<br>
