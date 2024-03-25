@@ -810,3 +810,28 @@ User Account : mit/pw<br>
 구멍가게 코딩단 security쪽 공부하기 옛버전이라 문제있어서 그렇다.<br>
 
 ★ 오라클 11g 에서 sequence 실행시 2번부터 생성될경우 sql에서 start with 0;를 붙이면 1부터 생성된다.
+
+
+#0325<br>
+☆ BoardMapperTests클래스는 BoardMapper인터페이스의 구현체를 주입받아서 동작<br>
+☆ mapper.xml에서 <select>태그의 id 속성값은 메서드의 이름과 일치하게 작성<br>
+☆ BoardService 인터페이스를 구현하는 구현체는 BoardServiceImpl이라는 클래스로 작성<br>
+☆ @Service는 계층 구조상 주로 비즈니스 영역을 담당하는 객체임을 표시하기 위해사 용<br>
+☆ BoardController는 BoardService 타입의 객체와 같이 연동해야 하므로 의존성에 대한 처리도 같이 진행한다.<br>
+☆ControllerTests에서 security-context.xml가 아니라 servlet-context.xml 이어야한다 복붙할때 주의하기<br>
+@ContextConfiguration({
+	  "file:src/main/webapp/WEB-INF/spring/root-context.xml",<br>
+	  "file:src/main/webapp/WEB-INF/spring/servlet-context.xml" })<br>
+
+
+
+
+카카오톡에 선생님이 올리신 주석 참고하기 꼼꼼하게 모르는 사람이 보더라도 알수있게<br>
+한줄한줄 왜했는지 파라미터는 어떻게 받았는지 매개값은 무엇이고 어떤 컨트롤러로 가는지<br>
+
+깃에 올리기 본인거에다가 계속 올려보기<br>
+
+강사님 깃허브 security 토큰필요 spring> 브런치에 board Security > webapp > <br>
+webinf > spring > securityContext.xml<br>
+★Security는 jsp에 전부 연결해야해서 보통 jsp, java에다가 맨 나중에넣는다<br>
+https://github.com/lonen8188/Spring/blob/Board%2BSecurity(%EC%A3%BC%EC%84%9D)/8.%20board(security)/src/main/webapp/WEB-INF/spring/security-context.xml<br>
