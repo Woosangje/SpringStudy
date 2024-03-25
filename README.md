@@ -835,3 +835,6 @@ User Account : mit/pw<br>
 webinf > spring > securityContext.xml<br>
 ★Security는 jsp에 전부 연결해야해서 보통 jsp, java에다가 맨 나중에넣는다<br>
 https://github.com/lonen8188/Spring/blob/Board%2BSecurity(%EC%A3%BC%EC%84%9D)/8.%20board(security)/src/main/webapp/WEB-INF/spring/security-context.xml<br>
+
+239p
+https://wehagothelp.zendesk.com/hc/ko/articles/360000299861--%EA%B2%8C%EC%8B%9C%ED%8C%90-%ED%9A%8C%EC%82%AC%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD-%EB%93%B1%EB%A1%9D
