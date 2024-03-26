@@ -836,5 +836,12 @@ webinf > spring > securityContext.xml<br>
 ★Security는 jsp에 전부 연결해야해서 보통 jsp, java에다가 맨 나중에넣는다<br>
 https://github.com/lonen8188/Spring/blob/Board%2BSecurity(%EC%A3%BC%EC%84%9D)/8.%20board(security)/src/main/webapp/WEB-INF/spring/security-context.xml<br>
 
-239p
 https://wehagothelp.zendesk.com/hc/ko/articles/360000299861--%EA%B2%8C%EC%8B%9C%ED%8C%90-%ED%9A%8C%EC%82%AC%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD-%EB%93%B1%EB%A1%9D
+
+#0326<br>
+register.jsp실행시 405 Get 오류 발생할경우<br>
+파일 업로드할때 에이젝스보내는 형식으로 하면된다. <br>
+
+쳇gpt 페이지에 코드 복여넣어보기 (회사에서는 사용하지 말것)<br>
+☆ $ is not defined 오류 발생할 경우 jquery 코드 추가하기<br>
+★ get.jsp에서 값을 화면에 출력할때 input을 사용하여 출력하는이유는 input재활용하기위해<br>
