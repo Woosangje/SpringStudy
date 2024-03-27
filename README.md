@@ -842,6 +842,15 @@ https://wehagothelp.zendesk.com/hc/ko/articles/360000299861--%EA%B2%8C%EC%8B%9C%
 register.jsp실행시 405 Get 오류 발생할경우<br>
 파일 업로드할때 에이젝스보내는 형식으로 하면된다. <br>
 
+#0327
+notice/modify.jsp에서 notice/list.jsp로 되돌아가기 완료
+notice/modify.jsp에서 등록 실행시 
+No mapping found for HTTP request with URI [/accessError] in DispatcherServlet with name 'appServlet'
+애러 발생한이유 Security문제 업데이트된 프로젝트로 갱신 로그인 하고 modify실행해 보았는데 
+
+397p
+
+
 쳇gpt 페이지에 코드 복여넣어보기 (회사에서는 사용하지 말것)<br>
 ☆ $ is not defined 오류 발생할 경우 jquery 코드 추가하기<br>
 ★ get.jsp에서 값을 화면에 출력할때 input을 사용하여 출력하는이유는 input재활용하기위해<br>
