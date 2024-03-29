@@ -858,7 +858,21 @@ register rest방식으로 출력하게 작성중<br>
 
 ★ 나중에 회원가입시 카카오톡 인증하는거해보기 <br>
 
-
 쳇gpt 페이지에 코드 복여넣어보기 (회사에서는 사용하지 말것)<br>
 ☆ $ is not defined 오류 발생할 경우 jquery 코드 추가하기<br>
 ★ get.jsp에서 값을 화면에 출력할때 input을 사용하여 출력하는이유는 input재활용하기위해<br>
+
+
+#0329<br>
+☆ mappertest에서 되는데 controllerTest에서 오류 발생하면 Controller.java에 @Controller, @AllArgsConstructor 있는지 확인하기<br>
+☆ get.jsp는 <form>태그 필요없음<br>
+회사에서 spring사용 무조건사용하는거 회원가입, 게시판<br>
+부트배우고나서 개인적으로 할사람 하고<br>
+부트는 혼자해도 나온다.<br>
+
+엑셀에 파라미터 발생하는거 다 써놓기<br>
+붙일때 문제생기는 이유는 security문제 Controller의 메소드에 @PreAuthorize(~)박아버리기<br>
+308p list페이지이동해결하기<br>
+
+
+
