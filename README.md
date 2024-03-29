@@ -842,21 +842,21 @@ https://wehagothelp.zendesk.com/hc/ko/articles/360000299861--%EA%B2%8C%EC%8B%9C%
 register.jsp실행시 405 Get 오류 발생할경우<br>
 파일 업로드할때 에이젝스보내는 형식으로 하면된다. <br>
 
-#0327
-notice/modify.jsp에서 notice/list.jsp로 되돌아가기 완료
-notice/modify.jsp에서 등록 실행시 
-No mapping found for HTTP request with URI [/accessError] in DispatcherServlet with name 'appServlet'
-애러 발생한이유 Security문제 업데이트된 프로젝트로 갱신 로그인 하고 modify실행해 보았는데 
+#0327<br>
+notice/modify.jsp에서 notice/list.jsp로 되돌아가기 완료<br>
+notice/modify.jsp에서 등록 실행시 <br>
+No mapping found for HTTP request with URI [/accessError] in DispatcherServlet with name 'appServlet'<br>
+애러 발생한이유 Security문제 업데이트된 프로젝트로 갱신 로그인 하고 modify실행해 보았는데 <br>
 
-#0328
-01:07
-get.jsp rest방식으로 출력완료
-register rest방식으로 출력하게 작성중
-{"bno":1,"title":"hello","content":"helloc","writer":"writer123"}
-04:00 강사님에게 공지페이지 ajax로 작성하지말라고 조언받음, PostMapping문제가 도저히 해결 안되서 일단 팀프로젝트에서 분리하여 공지페이지 작성시작,
+#0328<br>
+01:07<br>
+get.jsp rest방식으로 출력완료<br>
+register rest방식으로 출력하게 작성중<br>
+{"bno":1,"title":"hello","content":"helloc","writer":"writer123"}<br>
+04:00 강사님에게 공지페이지 ajax로 작성하지말라고 조언받음, PostMapping문제가 도저히 해결 안되서 일단 팀프로젝트에서 분리하여 공지페이지 작성시작,<br>
 
 
-★ 나중에 회원가입시 카카오톡 인증하는거해보기 
+★ 나중에 회원가입시 카카오톡 인증하는거해보기 <br>
 
 
 쳇gpt 페이지에 코드 복여넣어보기 (회사에서는 사용하지 말것)<br>
