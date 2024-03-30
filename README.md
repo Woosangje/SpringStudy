@@ -24,7 +24,8 @@ Open perspective에 스프링 들어 있음<br>
 
 ● perspective > web > utf-8인지 확인<br>
 ● file > new > spring legacy project ( spring MVC project, 프로젝트 이름 ex01 )<br>
-> com.wsj.www(자기이니셜) 입력 ><br>
+
+com.wsj.www(자기이니셜) 입력 ><br>
 package Explorer > 자바프로젝트와 다르게 src/test/java, src/test/sources가 있음<br>
 ★ 주의할점 앞으로는 테스트 돌려야 한다.<br>
 resources에는 jar같은 자원들이 들어간다.<br>
@@ -809,7 +810,7 @@ User Account : mit/pw<br>
 
 구멍가게 코딩단 security쪽 공부하기 옛버전이라 문제있어서 그렇다.<br>
 
-★ 오라클 11g 에서 sequence 실행시 2번부터 생성될경우 sql에서 start with 0;를 붙이면 1부터 생성된다.
+★ 오라클 11g 에서 sequence 실행시 2번부터 생성될경우 sql에서 start with 0;를 붙이면 1부터 생성된다.<br>
 
 
 #0325<br>
@@ -844,15 +845,11 @@ register.jsp실행시 405 Get 오류 발생할경우<br>
 
 #0327<br>
 notice/modify.jsp에서 notice/list.jsp로 되돌아가기 완료<br>
-notice/modify.jsp에서 등록 실행시 <br>
-No mapping found for HTTP request with URI [/accessError] in DispatcherServlet with name 'appServlet'<br>
-애러 발생한이유 Security문제 업데이트된 프로젝트로 갱신 로그인 하고 modify실행해 보았는데 <br>
 
 #0328<br>
 01:07<br>
 get.jsp rest방식으로 출력완료<br>
 register rest방식으로 출력하게 작성중<br>
-{"bno":1,"title":"hello","content":"helloc","writer":"writer123"}<br>
 04:00 강사님에게 공지페이지 ajax로 작성하지말라고 조언받음, PostMapping문제가 도저히 해결 안되서 일단 팀프로젝트에서 분리하여 공지페이지 작성시작,<br>
 
 
