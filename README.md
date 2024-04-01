@@ -815,12 +815,12 @@ User Account : mit/pw<br>
 
 #0325<br>
 ☆ BoardMapperTests클래스는 BoardMapper인터페이스의 구현체를 주입받아서 동작<br>
-☆ mapper.xml에서 <select>태그의 id 속성값은 메서드의 이름과 일치하게 작성<br>
-☆ BoardService 인터페이스를 구현하는 구현체는 BoardServiceImpl이라는 클래스로 작성<br>
+☆ mapper xml에서 select 태그의 id 속성값은 메서드의 이름과 일치하게 작성 <br>
+ ☆ BoardService 인터페이스를 구현하는 구현체는 BoardServiceImpl이라는 클래스로 작성<br>
 ☆ @Service는 계층 구조상 주로 비즈니스 영역을 담당하는 객체임을 표시하기 위해사 용<br>
 ☆ BoardController는 BoardService 타입의 객체와 같이 연동해야 하므로 의존성에 대한 처리도 같이 진행한다.<br>
 ☆ControllerTests에서 security-context.xml가 아니라 servlet-context.xml 이어야한다 복붙할때 주의하기<br>
-@ContextConfiguration({
+ @ContextConfiguration({
 	  "file:src/main/webapp/WEB-INF/spring/root-context.xml",<br>
 	  "file:src/main/webapp/WEB-INF/spring/servlet-context.xml" })<br>
 
