@@ -872,4 +872,49 @@ register rest방식으로 출력하게 작성중<br>
 308p list페이지이동해결하기<br>
 
 
-323p부터 파일목록문서화하기
+#0401
+323p부터 파일목록문서화하기<br>
+
+선택주문<br>
+휴대폰케이구매<br>
+주문정보<br>
+
+회원가입<br>
+로그인<br>
+마이페이지<br>
+비밀번호변경(유효성검사)<br>
+배송지 관리(신규배송지관리)<br>
+
+상품목록페이지 (비밀글)<br>
+
+동영상으로 포폴넣을수 있으면 넣기<br>
+
+서비스이용약관<br>
+주소는 주소 api<br>
+간편로그인 네이버,카카오<br>
+
+공지페이지에 글이나 댓글작성하면 관리자가 알수있게작성<br>
+
+delete누를경우 실제로 삭제하면 안된다.  필드에다가 false로 활성화 <br>
+업데이트하여 게시물을 안보이게끔 부모키 있으면 삭제안된다.<br>
+
+파일 업로드 만들고 레스트 방식으로 수정한 다음에 <br>
+CommonRestController로 만든다<br>
+
+★tml action경로 2개로 선언못한다.<br>
+☆ Ajax방식 업로드할경우 jQuery이용하기<br>
+★ 502page "FileList"는 F12 Console에서 볼수있다.<br>
+
+
+
+★ 페이지 실행시<br>
+Request method 'GET' not supported<br>
+요청 행에 포함된 해당 메소드는, origin 서버에 의해 인지되었으나, 대상 리소스에 의해 지원되지 않습니다.)<br>
+발생할경우 _csrf 붙이기 form안에 한줄만 붙이면 된다.<br>
+<input type="hidden" name="${_csrf.parameterName}" value = "${_csrf.token}"/><br>
+
+PageDTO.java대신 PageVO로 사용하기 <br>
+☆DB용 이미지는 images폴더, 고정사용이미지는 img폴더<br>
+
+
+modify에서 수정하고 list에서 수정했던 목록 클릭하면 404에러뜨는거 해결하기<br>
