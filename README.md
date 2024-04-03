@@ -911,7 +911,7 @@ CommonRestController로 만든다<br>
 Request method 'GET' not supported<br>
 요청 행에 포함된 해당 메소드는, origin 서버에 의해 인지되었으나, 대상 리소스에 의해 지원되지 않습니다.)<br>
 발생할경우 _csrf 붙이기 form안에 한줄만 붙이면 된다.<br>
-<input type="hidden" name="${_csrf.parameterName}" value = "${_csrf.token}"/><br>
+"<input type="hidden" name="${_csrf.parameterName}" value = "${_csrf.token}"/><br>"
 
 PageDTO.java대신 PageVO로 사용하기 <br>
 ☆DB용 이미지는 images폴더, 고정사용이미지는 img폴더<br>
