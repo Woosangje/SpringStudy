@@ -926,5 +926,23 @@ modify에서 수정하고 list로 돌아가서 목록 클릭하면 404에러뜨�
 일일 진행현황도 원래 해야한다.<br>
 
 
-#0403
-팀프로젝트 할때 jquery 버전 주의하기
+#0403 aws에다 오라클깔고 localhost해가지고 연동해보기<br>
+★ 팀프로젝트 할때 jquery 버전 주의하기<br>
+★ 웹get.jsp 에서 댓글 등록할때 405오류 발생하면 토큰있어야해서 그렇다.(security문제)
+https://github.com/lonen8188/Spring/blob/master/8.%20board(security)/src/main/webapp/WEB-INF/views/board/get.jsp
+에서 부족한거 채워넣기<br>
+★modal 출력안되는건 보통 js에서 철자틀려서 그렇다.<br>
+★ js에서  띄어씌기 남용하지 않기<br>
+
+
+#0404<br>
+부트가 좀더 안정적, 부트 수업7주일도 안함<br>
+
+ppt, 파일정의서, aws게시<br>
+ppt(일정관리, 조원소개 및 담당, UI설명, 기능설명)<br>
+:프로젝트 하면서 느낀점, 향후 개선 점<br>
+
+프로젝트하면서 느낀점은 로그인과 sequrity공부를 했었어야 했다.<br>
+
+이력서 만들기<br>
+aws에 올리는게 최종목적<br>
