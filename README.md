@@ -941,8 +941,22 @@ https://github.com/lonen8188/Spring/blob/master/8.%20board(security)/src/main/we
 ppt, 파일정의서, aws게시<br>
 ppt(일정관리, 조원소개 및 담당, UI설명, 기능설명)<br>
 :프로젝트 하면서 느낀점, 향후 개선 점<br>
-
 프로젝트하면서 느낀점은 로그인과 sequrity공부를 했었어야 했다.<br>
 
 이력서 만들기<br>
 aws에 올리는게 최종목적<br>
+
+#0405<br>
+프로젝트 마감<br>
+1. 각자 코드에 주석 달고, 통합 마무리<br>
+2. aws개인 서버에 프로젝트 등록, 게시해 볼것<br>
+3. aws에 올린 내용 ppt에 추가할 것<br>
+4. 주석 단 코드 git에 올리고 ppt에 링크 추가<br>
+5. 프로젝트(ppt, xlsx, 소스파일)압축해서 조장이 lonen@n.com으로 보냄<br>
+
+★get.jsp Security 문제있으면 선생님git참고하기<br>
+★★ Cannot read properties of undefined (reading 'on') 오류 발생하면<br>
+js의 메소드,객체 순서 정돈해보기<br>
+
+순정js팝업버튼.txt 참조하기<br>
+★aws에서 css깨질경우 resources/ 경로 확인해 볼것<br>
