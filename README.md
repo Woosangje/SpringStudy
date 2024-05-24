@@ -2,15 +2,12 @@
 ★★★★★★★★★★★★★ 안의 pdf 참조 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
 0226<br>
-7.Spring<br>
 스프링은 끝물이라 스프링 부트로 간다. 스프링은 걸쳐가는 단계<br>
-
 
 ★★★ 일주일전에 spring서버 닫음 마켓에서 설치 불가 (알아두기만 하고 ex01파일을 사용할것) ★★★<br>
 
 
-● 10-5 실행 "I move it " 클릭<br>
-192.168.111.105 기억하기<br>
+● Mv 10-5 실행 "I move it " 클릭<br>
 컴퓨터 이름 10-4로 기억하기<br>
 찾기 > cmd > sqlplus > 이클립스 실행<br>
 ★ 이클립스는 2022-06버전이 제일 안정적임<br>
@@ -39,6 +36,8 @@ Package Explorer에서 파란색 s자 붙은 파일들은 spring이 적용되는
 ● 압축풀어서 실행하기(위의 방법은 전부 오류발생한다, 집또는 본체에서 실행하는 방법임)<br>
 프로젝트 경로 sts-eclipse로 하고 실행<br>
 package Explorer > import projects... > Select All(click) > into folder > Overwrite existing resources without warning는 on 설정 <br>
+
+★ 프로젝트 생성안되면 .m2 밑의 repository폴더의 내용물 삭제하고 이클립스 재시작 할것
 
 ● 코드로 배우는 스프링 완성 .pdf<br>
 ★ 부트스트랩 그리드예시같은거 홈페이지가서 보기<br>
