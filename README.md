@@ -959,3 +959,9 @@ js의 메소드,객체 순서 정돈해보기<br>
 
 순정js팝업버튼.txt 참조하기<br>
 ★aws에서 css깨질경우 resources/ 경로 확인해 볼것<br>
+
+
+#학원졸업 0524 책에있는 에러설명위로로 작업
+※ Tomcat으로 실행할 때 invalid loc header (bad signature) 메시지가 보이면서 정상적으로 실행되지 않는 경우 - 대부분 라이브러리문제, 다만 이 문제는 Tomcat쪽에 라이브러리가 제대로 처리되지 않아서 생기는 문제 .m에서 파일 삭제하면 대부분 해결됨
+또는 Maven을 강제로 업데이트 해보자 프로젝트를 선택한 후 Maven 메뉴를 이용해서 Update Project를 선택
+
