@@ -392,7 +392,8 @@ footer의 ready.function에<br>
 자바에서 mapper일경우 mapper.xml을 꼭 가보기<br>
 ★ 오타나면 null point Exception 오류 발생한다.<br>
 jsp 상단에 <%@~%> 넣기<br>
-● fmt 작성할경우 상단에 <%@" 스페이스 눌러서 http://java.sun.com/jsp/jstl/fmt 추가한다. 안하면 출력안됨<br>
+● fmt 작성할경우 상단에 <%@ taglib uri=" http://java.sun.com/jsp/jstl/core" prefix="c"%>   
+ <%@ taglib uri=" http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%> 선언 안하면 출력안됨<br>
 ★오타 게시판 mybatis문제 생길경우 jsp에서 content를 context로 적었는지  철자 확인<br>
 ● 한글처리 web.xml<br>
 
