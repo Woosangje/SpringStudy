@@ -340,15 +340,13 @@ boot도 10년쓴다.<br>
 ★ @RequestMapping("/board/*") ("/~" ) 빼먹지 말기<br>
 ★ 문제시 Mudule 에 /인지 /controller인지 확인<br>
 ★ log.info를 파일로 만든다<br>
-★★ 톰켓을 안쓰고 사용하는 방법 class BoardControllerTests 는 가짜 mvc<br>
-@Before,  junit걸로 import<br>
 (ctx).build(); 는 build패턴<br>
 ★ BoardControllerTests는 servlect-context.xml도 필요하다<br>
 @ContextConfiguration({"file:src/main/webapp/WEB-INF/spring/root-context.xml",<br>
 file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"}) //참고할 파일
 로 수정할것<br>
-@WebAppConfiguration<br>
-●MockMvc.txt복사해서 붙여넣기<br>
+
+●MockMvc.txt, JDBCTests, DataSourceTests 깃에서 복사해서 붙여넣기<br>
 String register() 값이 두개있는 경우는 성공시/실패시<br>
 ★★★★ unread 오류 해결 정보<br>
 테이블 조회할 때 콘솔창에서 unread 되는거 해결방법인데 , property에 BoardVO 변수명이랑 맞춰주면 될 것 같아요! column은 테이블 컬럼명이에욤<br>
@@ -356,6 +354,8 @@ String register() 값이 두개있는 경우는 성공시/실패시<br>
 ★ rog.zerock.controller 철자틀려서 오류생겼었음 com<br>
 ★ return "redirect:/board/list"; // 처리후 돌아갈 페이지     같은거 엑셀에저장<br>
 ★★ BoardMapper.txt 붙여넣기<br>
+
+## MockMvc로 Register 테스트하면 WARNING: An illegal reflective access operation has occurred 오류 발생하는데 신경안써도 DB에 등록은된다
 
 
 
@@ -374,8 +374,7 @@ r, list<br>
 ● 10-5 바탕화면의 spring폴더 > bootstrap > 게시판 만들었던것에 붙일것음<br>
 webapp > resources에 css,js 넣기<br>
 
-@RequestMapping("/board/*")은 폴더 경로<br>
-board/는 클래서역활 /list는 메서드 역할<br>
+
 list에 부트스트랩 table 코드 복붙, 톰켓실행하고 크롬에서 실행하면 경로 때문에 깨져보임<br>
 ctrl + shifg + / 주석처리<br>
 크롬 google jquery cdn 검색<br>
@@ -392,7 +391,7 @@ footer의 ready.function에<br>
 0304 list.jsp파일에 jsp헤더list.txt파일 복붙하기<br>
 자바에서 mapper일경우 mapper.xml을 꼭 가보기<br>
 ★ 오타나면 null point Exception 오류 발생한다.<br>
-jstl 상단에 <%@~%> 넣기<br>
+jsp 상단에 <%@~%> 넣기<br>
 ● fmt 작성할경우 상단에 <%@" 스페이스 눌러서 http://java.sun.com/jsp/jstl/fmt 추가한다. 안하면 출력안됨<br>
 ★오타 게시판 mybatis문제 생길경우 jsp에서 content를 context로 적었는지  철자 확인<br>
 ● 한글처리 web.xml<br>
