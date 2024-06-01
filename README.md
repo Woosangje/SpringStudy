@@ -55,11 +55,8 @@ views는 jsp쪽<br>
 web.xml은 톰켓 환경설정<br>
 pom.xml은 Maven에서 반자동으로 끌어온다.<br>
 
-★★ hom.xml 주석 확실이 공부할것<br>
-					★window pro는 어둠의경로로<br>
-@Controller에서 뿌려준다.<br>
-Model model 이 굉장히 중요함<br>
-return "home"일 경우 home.jsp를 찾는다. ex) views폴더에 home.jsp있음<br>
+★★ hom.xml 주석 확실히 공부할것<br>
+
 console의 검은색 텍스트가 메모리 영역 만드는거<br>
 
 38p럼북 라이브러리 설치 (이미 설치되어있음)<br>
@@ -114,11 +111,7 @@ Beans Graph 탭 눌러보기 > 노란색 콩들이보인다 (method)<br>
 @Log4j2는 보안에 취약<br>
 Sysout.console 은 이제 log.info()로 대체된다.<br>
 testExist더블클릭 마우스 오른쪽 클릭 > Run as > 2.JUnit Test<br>
-하단탭에 JUnit탭 발생하고, 콘솔에 <br>
- INFO  org.zerock.sample.SampleTests(testExist27) - Restaurant(chef=Chef())<br>
- INFO  org.zerock.sample.SampleTests(testExist28) - -------------------------<br>
- INFO  org.zerock.sample.SampleTests(testExist29) - Chef()<br>
-가 있어야 한다 없으면 오류, 경로글자 오타일수 있음<br>
+
 ● 선생님 이 뿌린 pom.xml 참조 <br>
 복습 많이 해야한다.<br>
 @Log4j 는 로그찍음 Sysout 대신 log.info<br>
@@ -152,8 +145,8 @@ org.zerock.controller 로새스프링 프로젝트생성<br>
 10-1 에서는 이제 이클립스 사용안한다. sts.exe실행 시작시 경고 팝업뜨면 톰켓 없어서 그렇다<br>
 server탭에서 톰켓연결할것<br>
 ★★ Package Explorer에서 파일 정보 안보이면 Package Explorer 닫았다가 window탭에서 다시 Package Explorer열어보기<br>
-이제부터  복붙으로 프로젝트 생성한다.<br>
-10-1 불안정하니 jdk 11버전으로 낮춰라<br>
+.xml 코드는 어지간하면 복붙하기<br>
+불안정하니 jdk 11버전으로 낮춰라<br>
 
 ★★★ pom.xml의 첫줄에 오류발생한는거 <br>
 			<plugin><br>
@@ -164,7 +157,7 @@ server탭에서 톰켓연결할것<br>
 			</plugin><br>
 <plugins></plugins>안에다 추가하면 해결된다.<br>
 
-★★ autowrit? 오류 뜨면 lombok 설치안되있는것<br>
+★★ autowrite? 오류 뜨면 lombok 설치안되있는것<br>
 
 
 ★ 0227<br>
@@ -225,7 +218,7 @@ mvc.txt받은거 참고할것<br>
 <url-pattern>/</url-pattern> 은 localHost의 /<br>
 Request/Response 사용안함<br>
 이제 <% value %> 사용안함<br>
-★★★123p 여러번 읽어보기  ★★Model★★ Model에서 데이터를 땡겨온다.<br>
+★★★123p 여러번 읽어보기 Model에서 데이터를 땡겨온다.<br>
 <context:component-scan base-package="org.zerock.controller" /> 의 경로에있어야 <br>
 파란색 s마크가 생긴다.<br>
 크롬에서 http://localhost/sample/ 입장<br>
@@ -260,7 +253,8 @@ https://mvnrepository.com/ > commons-fileupload 검색 > Apache Commons FileUplo
 c 드라이브 > 파일이름upload로 생성 > 파일 tmp 생성<br>
 servlet-context.xml > <!--  파일 업로드용 5가지 처리 -->이하 코드 추가<br>
 오타나면 안되니 받은 텍스트 붙여넣기<br>
-★<beans:property name="defaultEncoding" value="utf-8"></beans:property> 는 한글깨짐 방지<br>
+
+★<beans:property name="defaultEncoding" value="utf-8"></beans:property> 는 웹에서 등록시 한글깨짐 방지<br>
 ★ value="file:/C:/upload/tmp"></beans:property> 파일 경로 주의<br>
 ★★★ 주석 선언할때마다 성실하게 입력해넣기<br>
 @GetMapping("/exUpload") 의 exUpload는 .jsp<br>
@@ -269,9 +263,6 @@ servlet-context.xml > <!--  파일 업로드용 5가지 처리 -->이하 코드 
 
 ★★★C:\oraclexe\app\oracle\product\11.2.0\server\bin 집노트북에 복붙하기<br>
 C:\Program Files\Common Files\Oracle\Java\javapath<br>
-
-error_page.jsp 실행하고나서 주소 age=에 aaa를 넣고 실행해본다.<br>
-http://localhost/sample/ex04?name=kkw&age=aaa&page=3<br>
 
 ★★web.xml 철자틀리면 톰켓에서 오류 생김<br>
 <init-param> <!-- 예외처리를 톰켓이 아닌 spring에서 처리할 것 --><br>
@@ -351,7 +342,6 @@ String register() 값이 두개있는 경우는 성공시/실패시<br>
 ★★★★ unread 오류 해결 정보<br>
 테이블 조회할 때 콘솔창에서 unread 되는거 해결방법인데 , property에 BoardVO 변수명이랑 맞춰주면 될 것 같아요! column은 테이블 컬럼명이에욤<br>
 ★ nvarchar을 n붙여너 unread생긴것<br>
-★ rog.zerock.controller 철자틀려서 오류생겼었음 com<br>
 ★ return "redirect:/board/list"; // 처리후 돌아갈 페이지     같은거 엑셀에저장<br>
 ★★ BoardMapper.txt 붙여넣기<br>
 
@@ -363,10 +353,6 @@ String register() 값이 두개있는 경우는 성공시/실패시<br>
 get매핑할때 / 사용할것<br>
 controller에서 jsp로 간다.<br>
 백을 완성시켜 놓고 프론트에 붙인다.<br>
-
-jsp , html ,  분기 , 서비스 , 매핑(메퍼) , 오라클<br>
-c, insert는  int로 반환 ~개 생성되었습니다.<br>
-r, list<br>
 
 ★ mybatis , 히카리cp 사용안하는 회사도 있다.<br>
 프론트 있는 상태에서 개발하는 것을 추천<br>
@@ -380,26 +366,18 @@ ctrl + shifg + / 주석처리<br>
 크롬 google jquery cdn 검색<br>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script><br>
 
-받은 부트스트랩 새로고침할때 매뉴 사라지지 않는 문제<br>
-footer의 ready.function에<br>
- $(".sidebar-nav")<br>
-        .attr("class", "sidebar-nav navbar-collapse collapse")<br>
-        .attr("aria-expanded", "false")<br>
-        .attr("style","height:1px")<br>
-추가<br>
-
-0304 list.jsp파일에 jsp헤더list.txt파일 복붙하기<br>
+list.jsp파일에 jsp헤더list.txt파일 복붙하기<br>
 자바에서 mapper일경우 mapper.xml을 꼭 가보기<br>
 ★ 오타나면 null point Exception 오류 발생한다.<br>
 jsp 상단에 <%@~%> 넣기<br>
-● fmt 작성할경우 상단에 <%@ taglib uri=" http://java.sun.com/jsp/jstl/core" prefix="c"%>   
+● fmt 작성할경우 상단에<br>
+<%@ taglib uri=" http://java.sun.com/jsp/jstl/core" prefix="c"%>   
  <%@ taglib uri=" http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%> 선언 안하면 출력안됨<br>
 ★오타 게시판 mybatis문제 생길경우 jsp에서 content를 context로 적었는지  철자 확인<br>
 ● 한글처리 web.xml<br>
 
-
-이제 등록 할때 href대신 자스사용할거임<br>
 249<br>
+이제 등록 할때 href대신  <form id='operForm'>이랑 Js 사용할것<br>
 내일부터 페이징 처리, <br>
 ★★★ jsp에서 java코드들 주석처리하면 웹에서 F12누를경우 주석이 다보인다.<br>
 http://localhost/board/register<br>
