@@ -1,4 +1,3 @@
-0226<br>
 스프링은 끝물이라 스프링 부트로 간다. 스프링은 걸쳐가는 단계<br>
 
 ★★★ 일주일전에 spring서버 닫음 마켓에서 설치 불가 (알아두기만 하고 ex01파일을 사용할것) ★★★<br>
@@ -378,37 +377,29 @@ jsp 상단에 <%@~%> 넣기<br>
 
 249<br>
 이제 등록 할때 href대신  <form id='operForm'>이랑 Js 사용할것<br>
-내일부터 페이징 처리, <br>
 ★★★ jsp에서 java코드들 주석처리하면 웹에서 F12누를경우 주석이 다보인다.<br>
 http://localhost/board/register<br>
 엑셀파일 마무리<br>
-sts.exe Database 설치 방법:  help > update > https://download.eclipse.org/releases/2021-03  로 검색<br>
-~267<br>
-파일목록문서화 완성하기<br>
-
+sts.exe Database 설치 방법:  help > update > https://download.eclipse.org/releases/2021-03  로 검색(안될수도 있음)<br>
 
 ※0305<br>
 엑셀 메소드 별로 쪼개기<br>
-268~<br>
+268p<br>
 ● id="dataTables-example" 넣으면 페이징과 search가 보인다<br>
 ● order by의 문제 268p  order by 대신 인덱스를 사용하자<br>
-[CDATA]안에는 주석처리 안하는게 좋음<br>
+● [CDATA]안에는 주석처리 안하는게 좋음<br>
 BoardServiceImpl빨간줄 생기면<br>
 ● 14페이징 화면 처리 302P<br>
-PageDTO 공식이지 써먹으면된다.<br>
+PageDTO 공식 써먹으면된다.<br>
 페이지네이션 https://getbootstrap.com/docs/4.3/components/pagination/<br>
 
 ★★350p까지의 완성본 board(페이징, 다중검색)<br>
-다중항목 검색까지<br>
-목표350p336<br>
 ★ BoardMapper.xml 에서 resultType을 resultMap으로 입력해도 오류발생하여 웹에서 출력안된다.<br>
 
 ※0306<br>
 board(페이징,다중검색) 파일 안의 src board안에 복붙<br>
 BoardMapper.xml db의 crud를 쿼리 처리<br>
-get은 게시물 클릭할때 가져오는거<br>
-register.jsp 게시물 작성<br>
-● board 복붙했으면 오른쪽 reflash 클릭<br>
+
 ● 웹에서 실행시 이상하면 톰켓다시설정할것 <br>
 
 jsp 2000년도 유행<br>
