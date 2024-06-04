@@ -393,7 +393,6 @@ BoardServiceImpl빨간줄 생기면<br>
 PageDTO 공식 써먹으면된다.<br>
 페이지네이션 https://getbootstrap.com/docs/4.3/components/pagination/<br>
 
-★★350p까지의 완성본 board(페이징, 다중검색)<br>
 ★ BoardMapper.xml 에서 resultType을 resultMap으로 입력해도 오류발생하여 웹에서 출력안된다.<br>
 
 ※0306<br>
