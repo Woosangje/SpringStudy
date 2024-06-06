@@ -160,7 +160,7 @@ server탭에서 톰켓연결할것<br>
 ★ 0227<br>
 60p 이해할것<br>
 ★@Log4j 를 Log4j2로 수정할 것<br>
-83 히카리 hikaricp<br>
+히카리 hikaricp<br>
 https://mvnrepository.com/search?q=hikaricp<br>
 2.7.4 버전 클릭<br>
 
