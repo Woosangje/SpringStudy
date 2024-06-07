@@ -233,9 +233,7 @@ TodoDTO.java > TodoDTO 의 Date는 java.util<br>
 void initBinder() 주석처리하고 실행하면 된다.
 138p까지 복습하기
 
-0228<br>
-★135p [] 설명<br>
-return "/sample/ex04" ;			/sample 반드시 붙이기<br>
+★135p [] 설명<br
 ★★★ 웹화면에 hello.jsp 보일경우 하단 톰켓에서 add/remove 설정해보자.<br>
 
 ● jackson-databind<br>
@@ -322,7 +320,6 @@ unread신경쓰지 말고 날짜만 확인하기<br>
 mapper는 대부분 DB용어<br>
 context는 메모리영역<br>
 문제생기면 이클립스 종료재실행 해보기<br>
-boot도 10년쓴다.<br>
 
 ★ 메서드 별로 어디서어디로 갔다 엑셀에 정리하기<br>
 ★ @RequestMapping("/board/*") ("/~" ) 빼먹지 말기<br>
