@@ -211,7 +211,6 @@ WebApplication Context = 톰켓<br>
 책과 버전 다름<br>
 mvc.txt받은거 참고할것<br>
 크롬에서 http://localhost/controller/ 검색<br>
-112p<br>
 <url-pattern>/</url-pattern> 은 localHost의 /<br>
 Request/Response 사용안함<br>
 이제 <% value %> 사용안함<br>
@@ -221,7 +220,6 @@ Request/Response 사용안함<br>
 크롬에서 http://localhost/sample/ 입장<br>
 void 라서 반환이없으면 똑같은 이름의 jsp를 찾는다. <br>
 Get방식은 보안에 안좋다.<br>
-● 131p<br>
 ★ 131p aaa 실행 안될시 톰켓 /controller 수정되어있는지확인
 ★ 데이터의 크기가 형식보다(int) 보다크면 자동으로 안된다.<br>
 ● SampleDTOList<br>
