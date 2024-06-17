@@ -375,8 +375,6 @@ http://localhost/board/register<br>
 엑셀파일 마무리<br>
 sts.exe Database 설치 방법:  help > update > https://download.eclipse.org/releases/2021-03  로 검색(안될수도 있음)<br>
 
-※0305<br>
-엑셀 메소드 별로 쪼개기<br>
 268p<br>
 ● id="dataTables-example" 넣으면 페이징과 search가 보인다<br>
 ● order by의 문제 268p  order by 대신 인덱스를 사용하자<br>
