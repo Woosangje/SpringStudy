@@ -85,7 +85,7 @@ lombok~.jar , spring-test ~ RELEASE.jar 있는지 확인<br>
 조장이 pom.xml을 뿌려서 통일시킨다.<br>
 
 ● 
-7.spring 파일 >  <br>
+(7.spring) 파일 >  <br>
 <!-- log4j2 활성화 : resources log4j2.xml 변경 https://logging.apache.org/log4j/2.x/maven-artifacts.html --><br>
 내용 복사해서 48p에 붙여넣기<br>
 src/test/resources, src/main/resources 에 있던 log4.j2.xml 2개 다 삭제하고<br>
