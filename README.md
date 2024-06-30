@@ -483,11 +483,16 @@ DB를 두개 넣고싶을때 Transational 사용한다.
 댓글완료)444p까지
 연봉높일려면 form이 아니라 rest사용해야한다.
 
-0308
 ex01프로젝트를 복사하여 filedata이름으로 생성
 \\192.168.0.200
 http://localhost/uploadFormAction 파일넣으면 404에러가 정상
 jsp 만들어야한다.
+
+458p<br>
+aop 테스트 실행시 WARNING: An illegal reflective access operation has occurred 경고가 발생하는데 mybatis문제 해결안해도 실행은 된다.<br>
+스프링 프레임워크 버전 5.1이상으로 올리면 된다는데 공부시에는 보류할것<br>
+
+
 
 488p 604p까지
 서버에 무리가없는데 이상하게 안되면 크롬에서 쿠키삭제할것 또는 vm재부팅할것
