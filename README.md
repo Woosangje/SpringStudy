@@ -451,7 +451,6 @@ board 프로젝트로 이동<br>
 
 ● 오류있을 경우 "board(댓글시작)"파일 붙여넣기<br>
 
-480p까지 aop, 트랜잭션 읽기<br>
 
 ★ 386p delete메소드의 targetRno는 int가 아니라 long이다.<br>
 ★ 이클립스설치하고 visualstudio 깔면 꼬인다.<br>
@@ -495,11 +494,14 @@ aop 테스트 실행시 WARNING: An illegal reflective access operation has occu
 스프링 프레임워크 버전 5.1이상으로 올리면 된다는데 공부시에는 보류할것<br>
 
 480p<br>
+480p까지 aop, 트랜잭션 읽기<br>
 댓글 수 처리하기, DB에서 실행할것<br>
 reply 칼럼<br>
 alter table tbl_board add (replycnt number default 0);<br>
 기존 댓글이 존재할 경우 실행<br>
 update tbl_board set replycnt = (select count(rno) from tbl_reply where tbl_reply.bno = tbl_board.bno);<br>
+
+● 댓글수 만들려면 트랜잭션 필요<br>
 
 488p 604p까지
 서버에 무리가없는데 이상하게 안되면 크롬에서 쿠키삭제할것 또는 vm재부팅할것
