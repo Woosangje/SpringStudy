@@ -489,6 +489,8 @@ http://localhost/uploadFormAction 파일넣으면 404에러가 정상
 jsp 만들어야한다.
 
 458p<br>
+트랜잭션 사용하려면 pom.xml에다 spring-jdbc, spring-tx, mybatis, mybatis-spring, hikari를 추가해야한다.
+
 aop 테스트 실행시 WARNING: An illegal reflective access operation has occurred 경고가 발생하는데 mybatis문제 해결안해도 실행은 된다.<br>
 스프링 프레임워크 버전 5.1이상으로 올리면 된다는데 공부시에는 보류할것<br>
 
