@@ -494,7 +494,12 @@ jsp 만들어야한다.
 aop 테스트 실행시 WARNING: An illegal reflective access operation has occurred 경고가 발생하는데 mybatis문제 해결안해도 실행은 된다.<br>
 스프링 프레임워크 버전 5.1이상으로 올리면 된다는데 공부시에는 보류할것<br>
 
-
+480p<br>
+댓글 수 처리하기, DB에서 실행할것<br>
+reply 칼럼<br>
+alter table tbl_board add (replycnt number default 0);<br>
+기존 댓글이 존재할 경우 실행<br>
+update tbl_board set replycnt = (select count(rno) from tbl_reply where tbl_reply.bno = tbl_board.bno);<br>
 
 488p 604p까지
 서버에 무리가없는데 이상하게 안되면 크롬에서 쿠키삭제할것 또는 vm재부팅할것
