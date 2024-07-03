@@ -501,6 +501,7 @@ alter table tbl_board add (replycnt number default 0);<br>
 기존 댓글이 존재할 경우 실행<br>
 update tbl_board set replycnt = (select count(rno) from tbl_reply where tbl_reply.bno = tbl_board.bno);<br>
 
+● 트랜잭션 사용하는 과정에서 오류생길수 있으니 파일별도로 저장하기
 ● 댓글수 만들려면 트랜잭션 필요<br>
 
 488p 604p까지
