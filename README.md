@@ -504,6 +504,8 @@ update tbl_board set replycnt = (select count(rno) from tbl_reply where tbl_repl
 ● 트랜잭션 사용하는 과정에서 오류생길수 있으니 파일별도로 저장하기
 ● 댓글수 만들려면 트랜잭션 필요<br>
 
+● 498p uploadForm.jsp 경로 board/ 아님
+
 488p 604p까지
 서버에 무리가없는데 이상하게 안되면 크롬에서 쿠키삭제할것 또는 vm재부팅할것
 ● 515p 이미지 업로드시 파일 2개 받게된다.
