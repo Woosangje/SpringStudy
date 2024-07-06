@@ -508,7 +508,7 @@ update tbl_board set replycnt = (select count(rno) from tbl_reply where tbl_repl
 
 488p 604p까지
 서버에 무리가없는데 이상하게 안되면 크롬에서 쿠키삭제할것 또는 vm재부팅할것
-● 515p 이미지 업로드시 파일 2개 받게된다.
+● 515p 이미지 업로드시 책과 달리 input에 multiple선언해도 2개, 3개 이런식으로 안뜬다 신경쓰지말것<br>
 탭의search로 변수 입력해서 찾아보자
 ajax rest사용해야 연봉이 오른다.
 520까지
@@ -516,7 +516,6 @@ attachDTO.setFileName(uploadFileName); 책에있는지 확인
 
 
 
-※ 0311<br>
 Security<br>
 Spring = 반자동화<br>
 605~738p까지 진행해보기<br>
