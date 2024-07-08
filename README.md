@@ -509,6 +509,10 @@ update tbl_board set replycnt = (select count(rno) from tbl_reply where tbl_repl
 488p 604p까지
 서버에 무리가없는데 이상하게 안되면 크롬에서 쿠키삭제할것 또는 vm재부팅할것
 ● 515p 이미지 업로드시 책과 달리 input에 multiple선언해도 2개, 3개 이런식으로 안뜬다 신경쓰지말것<br>
+
+$(document).ready(function() 안에 바닐라 function을 선언하면 웹에서 "showImage is not defined" 같은 에러발생할수 있다
+바닐라 function()은 밖에다가 선언할것
+
 탭의search로 변수 입력해서 찾아보자
 ajax rest사용해야 연봉이 오른다.
 
