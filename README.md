@@ -512,9 +512,12 @@ update tbl_board set replycnt = (select count(rno) from tbl_reply where tbl_repl
 탭의search로 변수 입력해서 찾아보자
 ajax rest사용해야 연봉이 오른다.
 
-●531p
+● 531p
 파일 업로드 Resource선언 import org.springframework.core.io.FileSystemResource;로할것<br>
-
+● 541p
+str += "<li><a href=\"javascript:showImage(\'"+originPath+"\')\"><img src='/display?fileName="+fileCallPath+"'></a><li>";
+)">랑 <img src~ 사이에 enter 하지말것 토큰에러 발생한다.
+					
 
 
 
