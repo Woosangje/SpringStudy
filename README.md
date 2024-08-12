@@ -121,6 +121,7 @@ public SampleHotel(Chef chef) {this.chef = chef; }<br>
 주석처리하고 <br>
 @AllArgsConstructor //생성자 자동 주입<br>
 
+오라클 tord에서 수정시 commit꼭 실행해줄것
 
 추가<br>
 @AllArgsConstructor 는 모든 필드값에 반응해라라는 뜻<br>
