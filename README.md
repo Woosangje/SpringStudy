@@ -556,7 +556,12 @@ org.zerock.controller로 이름수정하고 servlet-context에 <filter-name>spri
 Ldap = 라이트 디렉토리 서비스, 이거하면 좋은점이 학교에서 공부하던거 집에서 똑같이 상용할 수 있음<br>
 access=의 "permitAll" , ROLE_MEMBER 이미 만들어져 있는 예약어<br>
 ●/login.jsp는 테스트용이라 우리가 안만들었다.<br>
+
+● 스프링 시큐리티 5버전부터는 반드시 PasswordEncoder라는 존재를 이용하도록 변경되었습니다.<br>
+스프링 시큐리티 4버전까지는 PasswordEncoder의 지정이 없어도 동작했지만, 5버전부터는 PasswordEncoder의 지정이 반드시 필요합니다.
+
 ★ {noop}실무에서 사용하지 말기<br>
+
 
 F12 > 탭 Application > 좌측 Cookies > delete<br>
 
