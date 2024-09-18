@@ -526,10 +526,10 @@ str += "<li><a href=\"javascript:showImage(\'"+originPath+"\')\"><img src='/disp
 
 
 
-Security<br>
+★ Security<br>
 Spring = 반자동화<br>
-605~738p까지 진행해보기<br>
-Intellij<br>
+★ 611p No bean named 'springSecurityFilterChain' available
+
 ● Project Exploerer탭 에서01ex 복사해서  Security프로젝트 생성<br>
 pom.xml을 board프로젝트의 pom.xml으로 마추기<br>
 
