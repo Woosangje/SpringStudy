@@ -569,6 +569,14 @@ F12 > 탭 Application > 좌측 Cookies > delete<br>
 멤버로그인상태에서 admin주소로 이동할시 잘못된 경로라고 알려주는게 필요<br>
 
 Class CustomAccessDeniedHandler 빨간줄뜨면 add ~ 선택 또는 코드입력<br>
+
+★accessError.jsp 상단<br>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %><br>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %><br>
+<%@ page import="java.util.*" %>    <br>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><br>
+★<br><br>
+
 ● 630p 실행안되면 <bean 입력됐는지 확인 ,그래도 오류뜨면 context0311.txt 복붙하기<br>
 //"{noop}member"  주석처리하면 안된다.
 _csrf 해킹공격에 대응하는 코드<br>
