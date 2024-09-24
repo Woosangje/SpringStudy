@@ -590,14 +590,6 @@ _csrf 해킹공격에 대응하는 코드<br>
 xhr은 csrf, security용<br>
 646p 로그인하면 500오류가 정상, INFO 책내용대로 나오고 에러도 책대로 나온다.<br>
 <security:user-service> {noop} ~ 주석처리해야 한다.<br>
-
-		<!-- 653p--><br>
-		<dependency><br>
-			<groupId>org.springframework</groupId><br>
-			<artifactId>spring-test</artifactId><br>
-			<version>${org.springframework-version}</version><br>
-		</dependency>   <br>
-
 pom.xml 히카리 mybatis주석달아보기<br>
 
 
