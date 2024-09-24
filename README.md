@@ -94,8 +94,7 @@ src/test/resources, src/main/resources 에 있던 log4.j2.xml 2개 다 삭제하
 pom.xml > <!-- Test -->는 메소드 마다 테스트<br>
 4.12로 버전 바꾸어야 한다. 			<version>4.12</version><br>
 
-● @Com ctrl + enter시 오류 팝업 뜬다 > 팝업의 content assist 클릭 ><br>
-아래쪽 목록중 java proprosal 체크 해제할것<br>
+● @Com ctrl + enter시 오류 팝업 뜬다 > 팝업의 content assist 클릭 > 아래쪽 목록중 java proprosal 체크 해제할것<br>
 
 ★ @선언된건 자동으로 입력되게 해야 오류가 적다.<br>
 
@@ -109,8 +108,7 @@ Beans Graph 탭 눌러보기 > 노란색 콩들이보인다 (method)<br>
 Sysout.console 은 이제 log.info()로 대체된다.<br>
 testExist더블클릭 마우스 오른쪽 클릭 > Run as > 2.JUnit Test<br>
 
-● 선생님 이 뿌린 pom.xml 참조 <br>
-복습 많이 해야한다.<br>
+● 선생님 이 뿌린 pom.xml 참조, 복습 많이 해야한다.<br>
 @Log4j 는 로그찍음 Sysout 대신 log.info<br>
 단일 생성자의 묵시적 자동 주입
 ● src/test/java > SampleTests.java를 SampleTest.java를 복사해서 이름만 바꿔서 생성.<br>
@@ -123,7 +121,6 @@ public SampleHotel(Chef chef) {this.chef = chef; }<br>
 
 오라클 tord에서 수정시 commit꼭 실행해줄것
 
-추가<br>
 @AllArgsConstructor 는 모든 필드값에 반응해라라는 뜻<br>
 @RequiredArgsConstructor //생성  		책보고 공부<br>
 ●●● 03 스프링과 Oracle Database연동 71p<br>
@@ -161,9 +158,6 @@ server탭에서 톰켓연결할것<br>
 ★ 0227<br>
 60p 이해할것<br>
 ★@Log4j 를 Log4j2로 수정할 것<br>
-히카리 hikaricp<br>
-https://mvnrepository.com/search?q=hikaricp<br>
-2.7.4 버전 클릭<br>
 
 root-context.xml > 84p 코드 입력 오타나면 안되니 복붙할것<br>
 중간  beans 탭 눌러보기 hikariConfig, dataSource있는지 확인하기 있으면 객체화 시켰다는 것<br>
@@ -174,10 +168,7 @@ root-context.xml > 84p 코드 입력 오타나면 안되니 복붙할것<br>
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml") //참고할 파일<br>
 @Log4j2 // Log4j2를 이용해서 로그 출력(콘솔에 찍히는 로그)<br>
 
-붙이기
-●testConnection Junit 실행해보기<br>
 ★@코드네임은 자동완성할것 자동완성 안하면 코드오류 발생할 수 있음<br>
-● MyBatis, spring에서 자주 사용함<br>
 web.xml에서 히카리 밑에다가 mybatis 선언<br>
 철자 틀리면 안되니 "mybatis복붙용 삭제금지".text에서 복붙하기<br>
 ★ 콘솔의 빨간색은 톰켓 로그 애러아님<br>
@@ -344,18 +335,16 @@ String register() 값이 두개있는 경우는 성공시/실패시<br>
 
 0304<br>
 get매핑할때 / 사용할것<br>
-controller에서 jsp로 간다.<br>
-백을 완성시켜 놓고 프론트에 붙인다.<br>
+controller에서 jsp로 간다. 백을 완성시켜 놓고 프론트에 붙인다.<br>
 
-★ mybatis , 히카리cp 사용안하는 회사도 있다.<br>
-프론트 있는 상태에서 개발하는 것을 추천<br>
+★ mybatis , 히카리cp 사용안하는 회사도 있다.  프론트 있는 상태에서 개발하는 것을 추천<br>
 
 ● 10-5 바탕화면의 spring폴더 > bootstrap > 게시판 만들었던것에 붙일것음<br>
 webapp > resources에 css,js 넣기<br>
 
 
 list에 부트스트랩 table 코드 복붙, 톰켓실행하고 크롬에서 실행하면 경로 때문에 깨져보임<br>
-ctrl + shifg + / 주석처리<br>
+ctrl + shift + / 주석처리<br>
 크롬 google jquery cdn 검색<br>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script><br>
 
@@ -372,8 +361,6 @@ jsp 상단에 <%@~%> 넣기<br>
 249<br>
 이제 등록 할때 href대신  <form id='operForm'>이랑 Js 사용할것<br>
 ★★★ jsp에서 java코드들 주석처리하면 웹에서 F12누를경우 주석이 다보인다.<br>
-http://localhost/board/register<br>
-엑셀파일 마무리<br>
 sts.exe Database 설치 방법:  help > update > https://download.eclipse.org/releases/2021-03  로 검색(안될수도 있음)<br>
 
 268p<br>
@@ -393,15 +380,12 @@ BoardMapper.xml db의 crud를 쿼리 처리<br>
 
 ● 웹에서 실행시 이상하면 톰켓다시설정할것 <br>
 
-jsp 2000년도 유행<br>
-spring 2010년<br>
-화면은 고정된상태에서 모달마냥 crud가 변경되는것 ajax<br>
-rest방식<br>
+jsp 2000년도 유행, spring은 2010년<br>
+화면은 고정된상태에서 모달마냥 crud가 변경되는것 ajax, rest방식<br>
 ● 안드로이드 프로그래밍책 한번읽어보기<br>
 주소에 ?가 없으면 rest 방식<br>
 rest 방식은 객체가 아님<br>
 
-353p Rest 프로젝트 생성<br>
 
 ★Rest프로젝트와 board프로젝트의 xml은 다르다 복붙주의<br>
 https://mvnrepository.com/<br>
@@ -446,7 +430,6 @@ http://localhost/rest/ticket<br>
 {"tno":123, "owner":"kkw","grade":"vvip"}<br>
 
 ● 17 Ajax 댓글처리 375p<br>
-board 프로젝트로 이동<br>
 5.3.21 를 5.0.7.RELEASE 로 버전을 낮춘다.<br>
 .xml에 json코드도 추가해야한다.<br>
 
@@ -463,7 +446,7 @@ board(댓글,tx.app)보고 버전 수정 할것
 ★★★ 384p Long bno 가 아니라 rno
 ●aop-tx 프로젝트생성
 
-메이븐 레파지토리 > aspectjrt<br>
+메이븐 레퍼지토리 > aspectjrt<br>
 
 이거 0307board알집의 pom.xml에 붙여넣기<br>
 			<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
@@ -484,7 +467,6 @@ DB를 두개 넣고싶을때 Transational 사용한다.
 연봉높일려면 form이 아니라 rest사용해야한다.
 
 ex01프로젝트를 복사하여 filedata이름으로 생성
-\\192.168.0.200
 http://localhost/uploadFormAction 파일넣으면 404에러가 정상
 jsp 만들어야한다.
 
@@ -495,7 +477,6 @@ aop 테스트 실행시 WARNING: An illegal reflective access operation has occu
 스프링 프레임워크 버전 5.1이상으로 올리면 된다는데 공부시에는 보류할것<br>
 
 480p<br>
-480p까지 aop, 트랜잭션 읽기<br>
 댓글 수 처리하기, DB에서 실행할것<br>
 reply 칼럼<br>
 alter table tbl_board add (replycnt number default 0);<br>
@@ -546,12 +527,9 @@ http://www.springframework.org/schema/security/spring-security-5.0.xsd<br>
 org.zerock.controller로 이름수정하고 servlet-context에 <filter-name>springSecurityFilterChain</filter-name><br>
 있는지 확인<br>
 
-서버 실행해보면 SEVERE: 필터 [springSecurityFilterChain]을(를) 시작하는 중 오류 발생<br>
-나온다.<br>
-
+서버 실행해보면 SEVERE: 필터 [springSecurityFilterChain]을(를) 시작하는 중 오류 발생한다.<br>
 안되면 수업자료<br>
 
-● @RequestMapping("/sample/*") 는 폴더경로 smaple폴더<br>
 615p
 Ldap = 라이트 디렉토리 서비스, 이거하면 좋은점이 학교에서 공부하던거 집에서 똑같이 상용할 수 있음<br>
 access=의 "permitAll" , ROLE_MEMBER 이미 만들어져 있는 예약어<br>
@@ -584,7 +562,6 @@ _csrf 해킹공격에 대응하는 코드<br>
 ● 630p bean id="customLoginSuccess"~ 입력 빼먹지 않기<br>
 ● 640p <security:logout logout-url="/customLogout" invalidate-session="true"/> 은 <security:http> 안에다 선언한다.<br>
 605~643p까지완성된파일<br>
-완성본 옮기기605~738p 7. sec(end)파일<br>
 
 
 xhr은 csrf, security용<br>
@@ -614,13 +591,9 @@ xml에서 mybatis 사용하려면 <!DOCTYPE mapper ~ mybatis> 있어야한다. �
 ★714p register.jsp에 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %> 선언하기
 
 ※ 0313
-
-회원2명 게시판 2명
 팀원끼리 DB 타입 문자길이 일치시켜야한다.
-주석달기
 667p WARN adim90 에러 있어도 정상
 ERROR org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilte
-★ 로그인페이지에 새로고침하고나서 쿠키를 삭제해야 admin90에 로그인할수 있다.
 
 ★ xml에 <dependency> 같은곳에 이유없이 빨간줄오류 뜨면 코드 지웠다 복붙해보기
 
@@ -636,9 +609,13 @@ jdbc 드라이버 파일선택 > ojdbc8.jar 넣으면됨<br>
 
 
 
-● jsp상단에 붙이기
+● jsp상단에 붙이기<br>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%><br>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%><br>
+
+● 스프링 시큐리티의 적용 이후에 register에서 한글 깨질경우 715p 참조<br>
+
+
 
 ★ 빛좋은 개살구 BookTopia제대로 만들려면 3달은 있어야함 어디까지할수있나 해보는것<br>
 BookTopia 세팅다되어있어서 MVware통째로 가져가야함 <br>
@@ -655,7 +632,7 @@ BookTopia 세팅다되어있어서 MVware통째로 가져가야함 <br>
 boot에서 카카오api연결 spring에서는 나중에<br>
 구멍가게 코딩단<br>
 
-○뒤로가기 문제 해결 256p<br>
+○뒤로가기 문제 256p<br>
 
 ★ 10이상 20미만을 sql에서 출력하는 방법<br>
 select bno, title, content from(<br>
@@ -671,26 +648,15 @@ select bno, title, content from(<br>
 자료 깃 공부 header master branch 공부하기<br>
 
 BoardMapper BoardController BoardService, BoardSeviceImpl<br>
-335p까지<br>
 와차피디아<br>
 게시글 삭제,공지사항,관리자페이지 , 영화<br>
 ○ 관리자페이지 > 웹페이지 선택 "와차최상단에 광고 넣는 탭 만들어보자<br>
 1.좌측탭 최상단 배너관리 만들어보자<br>
-
-
-부트스트랩 버전 5로<br>
 cdn<br>
 
-● 집에서 <br>
-부트스트랩 사이트에서 그리드, 콘테이너, 네비게이션,오픈캔버스 보기,<br>
-
-클래스보기<br>
 프론트에 힘쓰지 않기<br>
 
 ★ .jsp 실행하려면 Controller에서 GetMapping()메소드 만들어야한다.<br>
-adminSample.jsp 만들려고함<br>
-와차adminSample 왼쪽탭 아이콘 만들어서 넣어보기<br>
-
 완성된 예제에다가 주석달아놓기
 
 
@@ -706,15 +672,11 @@ bannerList 테이블 출력하기
 
 ex00으로 응용 톰켓연동하고 붙여넣기<br>
 체크박스 값 어떻게 보낼지 생각해보기<br>
-관리자페이지 디자인신경쓰지 않기<br>
 
 멤버관리자 페이지는 나중에 만들기<br>
 영화 리스트 DB연결완료<br>
 
 #0321<br>
-★ security 참고하기 부트용이라 위쪽만좀 틀리다.<br>
-https://velog.io/@wooryung/Spring-Boot-Spring-Security%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%98%EC%97%AC-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0<br>
-
 ★<mapper namespace="com.firstgroup.movies.mapper.MoviesMapper"> 는 MoviesMapper(i).java이다<br>
 selectKey keyProperty="movBno" 는 MovieVO의 변수 moveBno<br>
 ★ https://all-record.tistory.com/112<br>
@@ -727,10 +689,6 @@ util.Date는 오라클 날짜타입과 연동불가 /그런데 희진씨 sql.dat
 ○ Service는 DB끼리 섞어서 사용할떄 사용<br>
 ● MovieMapper(i) 의 getList() 매개변수 MovesVO로 변경<br>
 ●MovieServiceTests.java, AdminController 생성<br>
-
-spring boot 할때 jsp사용안함 ajax사용안함 부트스트랩 안씀 바닐라 js사용안함<br>
-
-내일214p작성하기<br>
 
 
 #0322<br>
@@ -758,23 +716,9 @@ User Account : mit/pw<br>
 
 
 
-
-★MoviesControllerTests.java안의 mockMvc.perform(MockMvcRequestBuilders.get("/board/list"))<br>
-는 boardController.java @RequestMapping("/board/*")와 일치시켜야 한다.<br>
-"/board/"는 매핑용 클래스 이름 "list"는 메소드 이름<br>
-
-댓글은 restController로 ajax사용하려고만듬<br>
-
 ★ postman.com , Postman Interceptor깔아서 하는게 좋음 (선생님이 다시설명)<br>
 크롬 추가 뿐만 아니라 exe다운로드도 해주어야한다.<br>
 ★.param("movBno", "2")의 movBno는 변수명 대소문자 구별해야한다.<br>
-
-● MovieMapper(i) 의 getList() 매개변수 MovesVO로 변경<br>
-●MovieServiceTests.java, AdminController 생성<br>
-
-공지사항 페이지 만들기 백부터<br>
-멤버 2개 섞어서<br>
-192.168.0.224<br>
 
 ●다른사람들이 만든것 <br>
 로그인 회원가입, 메일로 비밀번호 보내기, 파일업로드, 지도.api, 결제<br>
@@ -795,7 +739,7 @@ User Account : mit/pw<br>
 #0325<br>
 ☆ BoardMapperTests클래스는 BoardMapper인터페이스의 구현체를 주입받아서 동작<br>
 ☆ mapper xml에서 select 태그의 id 속성값은 메서드의 이름과 일치하게 작성 <br>
- ☆ BoardService 인터페이스를 구현하는 구현체는 BoardServiceImpl이라는 클래스로 작성<br>
+☆ BoardService 인터페이스를 구현하는 구현체는 BoardServiceImpl이라는 클래스로 작성<br>
 ☆ @Service는 계층 구조상 주로 비즈니스 영역을 담당하는 객체임을 표시하기 위해사 용<br>
 ☆ BoardController는 BoardService 타입의 객체와 같이 연동해야 하므로 의존성에 대한 처리도 같이 진행한다.<br>
 ☆ControllerTests에서 security-context.xml가 아니라 servlet-context.xml 이어야한다 복붙할때 주의하기<br>
@@ -816,25 +760,13 @@ webinf > spring > securityContext.xml<br>
 ★Security는 jsp에 전부 연결해야해서 보통 jsp, java에다가 맨 나중에넣는다<br>
 https://github.com/lonen8188/Spring/blob/Board%2BSecurity(%EC%A3%BC%EC%84%9D)/8.%20board(security)/src/main/webapp/WEB-INF/spring/security-context.xml<br>
 
-https://wehagothelp.zendesk.com/hc/ko/articles/360000299861--%EA%B2%8C%EC%8B%9C%ED%8C%90-%ED%9A%8C%EC%82%AC%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD-%EB%93%B1%EB%A1%9D
-
-#0326<br>
-register.jsp실행시 405 Get 오류 발생할경우<br>
-파일 업로드할때 에이젝스보내는 형식으로 하면된다. <br>
-
-#0327<br>
-notice/modify.jsp에서 notice/list.jsp로 되돌아가기 완료<br>
-
 #0328<br>
-01:07<br>
-get.jsp rest방식으로 출력완료<br>
 register rest방식으로 출력하게 작성중<br>
 04:00 강사님에게 공지페이지 ajax로 작성하지말라고 조언받음, PostMapping문제가 도저히 해결 안되서 일단 팀프로젝트에서 분리하여 공지페이지 작성시작,<br>
 
 
 ★ 나중에 회원가입시 카카오톡 인증하는거해보기 <br>
 
-쳇gpt 페이지에 코드 복여넣어보기 (회사에서는 사용하지 말것)<br>
 ☆ $ is not defined 오류 발생할 경우 jquery 코드 추가하기<br>
 ★ get.jsp에서 값을 화면에 출력할때 input을 사용하여 출력하는이유는 input재활용하기위해<br>
 
@@ -848,23 +780,12 @@ register rest방식으로 출력하게 작성중<br>
 
 엑셀에 파라미터 발생하는거 다 써놓기<br>
 붙일때 문제생기는 이유는 security문제 Controller의 메소드에 @PreAuthorize(~)박아버리기<br>
-308p list페이지이동해결하기<br>
 
 
 #0401
-323p부터 파일목록문서화하기<br>
 
-선택주문<br>
-휴대폰케이구매<br>
-주문정보<br>
-
-회원가입<br>
-로그인<br>
 마이페이지<br>
 비밀번호변경(유효성검사)<br>
-배송지 관리(신규배송지관리)<br>
-
-상품목록페이지 (비밀글)<br>
 
 동영상으로 포폴넣을수 있으면 넣기<br>
 
@@ -892,18 +813,9 @@ Request method 'GET' not supported<br>
 발생할경우 _csrf 붙이기 form안에 한줄만 붙이면 된다.<br>
 "<input type="hidden" name="${_csrf.parameterName}" value = "${_csrf.token}"/><br>"
 
-PageDTO.java대신 PageVO로 사용하기 <br>
-☆DB용 이미지는 images폴더, 고정사용이미지는 img폴더<br>
-
-
 #0402<br>
 modify에서 수정하고 list로 돌아가서 목록 클릭하면 404에러뜨는거 모달 js코드 주석처리하던지<br>
 보이게 수정하면 된다.<br>
-
-교실바꾸는 이야기 5월1일 이동<br>
-내일 오후 3시까지 댓글 완성하기<br>
-일일 진행현황도 원래 해야한다.<br>
-
 
 #0403 aws에다 오라클깔고 localhost해가지고 연동해보기<br>
 ★ 팀프로젝트 할때 jquery 버전 주의하기<br>
