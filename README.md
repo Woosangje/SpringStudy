@@ -602,6 +602,7 @@ pom.xml 히카리 mybatis주석달아보기<br>
 
 
 ※ 0312
+667p  ERROR뜬 상태에서 다음페이지 진행하기, 로그인 안되야 정상<br>
 (교재판매),(도서대여) 637<br>
 673 null 뜨는거 선생님의 pom.xml비교해볼것<br>
 선생님이 https://github.com/lonen8188/Spring 에다 올림<br>
