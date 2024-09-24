@@ -611,7 +611,7 @@ xml에서 mybatis 사용하려면 <!DOCTYPE mapper ~ mybatis> 있어야한다. �
 ● 662p MemberMapper.xml경로 org, zerock, mapper일일이 클릭해서 들어간다음 생성한다.<br>
 ○ id="authMap" 를 autoMap으로 오타<br>
 
-
+★714p register.jsp에 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %> 선언하기
 
 ※ 0313
 
@@ -665,7 +665,6 @@ select bno, title, content from(<br>
 
 ★ postman.com 깔아서 하는게 좋음<br>
 
-317p까지 복습 8시간 67페이지 진행<br>
 
 
 ※ 0315<br>
@@ -702,13 +701,6 @@ adminSample.jsp 만들려고함<br>
 ★ xml의 <mapper namespace="org.zerock.mapper.BoardMapper">는 BoardMapper.java경로<br>
 
 bannerList 테이블 출력하기
-
-#0319<br>
-관리자 페이지 목록,생성 페이지pdf 제작<br>
-
-#0320<br>
-관리자 페이지<br>
-목록,생성 초벌 프론트 제작<br>
 
 ★ aws c언어 가져가기<br>
 
