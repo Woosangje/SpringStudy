@@ -588,12 +588,12 @@ xml에서 mybatis 사용하려면 <!DOCTYPE mapper ~ mybatis> 있어야한다. �
 ● 662p MemberMapper.xml경로 org, zerock, mapper일일이 클릭해서 들어간다음 생성한다.<br>
 ○ id="authMap" 를 autoMap으로 오타<br>
 
-★714p register.jsp에 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %> 선언하기
-
-※ 0313
-팀원끼리 DB 타입 문자길이 일치시켜야한다.
-667p WARN adim90 에러 있어도 정상
-ERROR org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilte
+★714p register.jsp에 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %> 선언하기<br>
+★732p remove(vo)가 아니라 remove(rno) 오타<br>
+※ 0313<br>
+팀원끼리 DB 타입 문자길이 일치시켜야한다.<br>
+667p WARN adim90 에러 있어도 정상<br>
+ERROR org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilte<br>
 
 ★ xml에 <dependency> 같은곳에 이유없이 빨간줄오류 뜨면 코드 지웠다 복붙해보기
 
